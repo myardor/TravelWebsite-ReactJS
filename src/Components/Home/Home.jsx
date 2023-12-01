@@ -2,6 +2,10 @@ import React from "react"
 import "./home.css"
 import video from "../../assets/video.mp4"
 import { CiLocationOn, CiFilter } from "react-icons/ci"
+import { FiFacebook } from "react-icons/fi"
+import { FaTwitter, FaInstagram } from "react-icons/fa"
+import { BsListTask } from "react-icons/bs"
+import { TbApps } from "react-icons/tb"
 
 const Home = () => {
   return (
@@ -15,6 +19,7 @@ const Home = () => {
           <h1 className='homeTitle'>Search your Holiday</h1>
         </div>
 
+        {/* 卡片表单 */}
         <div className='cardDiv grid'>
           {/* 目的地 */}
           <div className='destinationInput'>
@@ -48,6 +53,19 @@ const Home = () => {
           <div className='searchOptions flex'>
             <CiFilter className='icon' />
             <span>MORE FILTERS</span>
+          </div>
+        </div>
+
+        {/* 底部图标栏 */}
+        <div className='homeFooterIcons flex'>
+          <div className='rightIcons'>
+            <FiFacebook className='icon' />
+            <FaTwitter className='icon' />
+            <FaInstagram className='icon' />
+          </div>
+          <div className='leftIcons'>
+            <BsListTask className='icon' />
+            <TbApps className='icon' />
           </div>
         </div>
       </div>

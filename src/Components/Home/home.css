@@ -143,4 +143,17 @@
 }
 .home .homeContent .cardDiv .searchOptions span {
   font-size: 13px;
+}
+.home .homeContent .homeFooterIcons {
+  width: 100%;
+  justify-content: space-between;
+}
+.home .homeContent .homeFooterIcons .icon {
+  font-size: 20px;
+  margin: 0 5px;
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+.home .homeContent .homeFooterIcons .icon:hover {
+  color: var(--PrimaryColor);
 }/*# sourceMappingURL=home.css.map */
