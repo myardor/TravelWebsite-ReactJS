@@ -1,10 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 import "./navbar.css"
 import { MdOutlineTravelExplore } from "react-icons/md"
 import { IoIosCloseCircle } from "react-icons/io"
 import { TbGridDots } from "react-icons/tb"
 
 const Navbar = () => {
+  // 设置导航栏的开启与关闭
+  const [active, setActive] = useState("navBar")
+  const toggleNavbar = () => {
+    if (active === "navBar") {
+      setActive("navBar showNavbar")
+    } else {
+      setActive("navBar")
+    }
+  }
   return (
     <section className='navBarSection'>
       <header className='header flex'>
@@ -16,7 +25,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className='navBar'>
+        <div className={active}>
           {/* 导航栏 */}
           <ul className='navLists flex'>
             <li className='navItem'>
@@ -67,12 +76,12 @@ const Navbar = () => {
           </ul>
 
           {/* 关闭导航栏 */}
-          <div className='closeNavbar'>
+          <div className='closeNavbar' onClick={toggleNavbar}>
             <IoIosCloseCircle className='icon' />
           </div>
         </div>
 
-        <div className='toggleNavbar'>
+        <div className='toggleNavbar' onClick={toggleNavbar}>
           <TbGridDots className='icon' />
         </div>
       </header>

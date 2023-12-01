@@ -62,6 +62,8 @@
       box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
       transition: 0.3s ease-in-out;
 
+      display: none;
+
       .navLists {
         flex-direction: column;
         justify-content: center;
@@ -76,6 +78,7 @@
             color: var(--textColor);
             font-size: 0.9rem;
             font-weight: 600;
+
             &:hover {
               color: var(--PrimaryColor);
             }
@@ -101,6 +104,10 @@
           color: var(--SecondaryColor);
         }
       }
+    }
+
+    .showNavbar {
+      display: block;
     }
   }
 
