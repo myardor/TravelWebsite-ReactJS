@@ -119,4 +119,28 @@
 }
 .home .homeContent .cardDiv .input input[type=range] {
   background: blue;
+}
+.home .homeContent .cardDiv .searchOptions {
+  position: absolute;
+  background: var(--gradientColor);
+  width: -moz-max-content;
+  width: max-content;
+  bottom: -0.7rem;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+  padding: 5px 1rem;
+  border-radius: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  cursor: pointer;
+}
+.home .homeContent .cardDiv .searchOptions:hover {
+  background: var(--PrimaryColor);
+}
+.home .homeContent .cardDiv .searchOptions .icon {
+  font-size: 18px;
+}
+.home .homeContent .cardDiv .searchOptions span {
+  font-size: 13px;
 }/*# sourceMappingURL=home.css.map */

@@ -1,7 +1,7 @@
 import React from "react"
 import "./home.css"
 import video from "../../assets/video.mp4"
-import { CiLocationOn } from "react-icons/ci"
+import { CiLocationOn, CiFilter } from "react-icons/ci"
 
 const Home = () => {
   return (
@@ -42,6 +42,12 @@ const Home = () => {
             <div className='input flex'>
               <input type='range' max='5000' min='1000' />
             </div>
+          </div>
+
+          {/* 筛选 */}
+          <div className='searchOptions flex'>
+            <CiFilter className='icon' />
+            <span>MORE FILTERS</span>
           </div>
         </div>
       </div>

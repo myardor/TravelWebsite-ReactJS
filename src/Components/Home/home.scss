@@ -125,6 +125,32 @@
           background: blue;
         }
       }
+
+      .searchOptions {
+        position: absolute;
+        background: var(--gradientColor);
+        width: max-content;
+        bottom: -0.7rem;
+        column-gap: 0.8rem;
+        padding: 5px 1rem;
+        border-radius: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+          background: var(--PrimaryColor);
+        }
+
+        .icon {
+          font-size: 18px;
+        }
+
+        span {
+          font-size: 13px;
+        }
+      }
     }
   }
 }
