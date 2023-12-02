@@ -14,7 +14,7 @@ import img9 from "../../assets/img(9).jpg"
 
 // import icons
 import { FaLocationDot } from "react-icons/fa6"
-import { FaClipboard } from "react-icons/fa"
+import { LuClipboardPaste } from "react-icons/lu"
 
 const Data = [
   {
@@ -154,7 +154,7 @@ const Main = () => {
                   {/* 了解详情 */}
                   <button className='btn flex'>
                     Details
-                    <FaClipboard className='icon' />
+                    <LuClipboardPaste className='icon' />
                   </button>
                 </div>
               </div>
