@@ -112,5 +112,109 @@
         }
       }
     }
+
+    .footerCard {
+      position: relative;
+      padding: 1rem 1rem 4rem;
+      gap: 2rem;
+      flex-direction: column;
+      border-radius: 1rem;
+      background: var(--bodyColor);
+      width: 100%;
+      justify-content: center;
+      align-items: flex-start;
+      overflow: hidden;
+
+      .footerIntro {
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        row-gap: 0.5rem;
+
+        .logoDiv {
+          .logo {
+            color: var(--blackColor);
+            font-weight: 600;
+
+            .icon {
+              font-size: 25px;
+              color: var(--PrimaryColor);
+              margin-right: 10px;
+            }
+          }
+        }
+
+        .footerParagraph {
+          font-size: 13px;
+          color: var(--textColor);
+        }
+
+        .footerSocials {
+          column-gap: 0.5rem;
+
+          .icon {
+            color: var(--blackColor);
+            font-size: 20px;
+
+            &:hover {
+              color: var(--PrimaryColor);
+            }
+          }
+        }
+      }
+
+      .footerLinks {
+        width: 100%;
+        flex-basis: 50%;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+
+        .linkGroup {
+          .groupTitle {
+            display: block;
+            font-weight: 600;
+            color: var(--blackColor);
+            margin-bottom: 0.5rem;
+          }
+
+          .footerList {
+            font-size: 15px;
+            color: var(--textColor);
+            transition: 0.3s ease-in-out;
+
+            .icon {
+              font-size: 15px;
+              color: var(--greyText);
+            }
+
+            &:hover {
+              color: var(--PrimaryColor);
+              transform: translateX(7px);
+
+              .icon {
+                color: var(--SecondaryColor);
+              }
+            }
+          }
+        }
+      }
+
+      .footerDiv {
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--SecondaryColor);
+        padding: 0.5rem 2rem;
+
+        small {
+          font-size: 10px;
+          color: var(--whiteColor);
+        }
+      }
+    }
   }
 }

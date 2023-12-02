@@ -102,4 +102,89 @@
 }
 .footer .secContent .contactDiv .inputDiv .btn .icon {
   font-size: 18px;
+}
+.footer .secContent .footerCard {
+  position: relative;
+  padding: 1rem 1rem 4rem;
+  gap: 2rem;
+  flex-direction: column;
+  border-radius: 1rem;
+  background: var(--bodyColor);
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.footer .secContent .footerCard .footerIntro {
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.footer .secContent .footerCard .footerIntro .logoDiv .logo {
+  color: var(--blackColor);
+  font-weight: 600;
+}
+.footer .secContent .footerCard .footerIntro .logoDiv .logo .icon {
+  font-size: 25px;
+  color: var(--PrimaryColor);
+  margin-right: 10px;
+}
+.footer .secContent .footerCard .footerIntro .footerParagraph {
+  font-size: 13px;
+  color: var(--textColor);
+}
+.footer .secContent .footerCard .footerIntro .footerSocials {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.footer .secContent .footerCard .footerIntro .footerSocials .icon {
+  color: var(--blackColor);
+  font-size: 20px;
+}
+.footer .secContent .footerCard .footerIntro .footerSocials .icon:hover {
+  color: var(--PrimaryColor);
+}
+.footer .secContent .footerCard .footerLinks {
+  width: 100%;
+  flex-basis: 50%;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .groupTitle {
+  display: block;
+  font-weight: 600;
+  color: var(--blackColor);
+  margin-bottom: 0.5rem;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList {
+  font-size: 15px;
+  color: var(--textColor);
+  transition: 0.3s ease-in-out;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList .icon {
+  font-size: 15px;
+  color: var(--greyText);
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover {
+  color: var(--PrimaryColor);
+  transform: translateX(7px);
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover .icon {
+  color: var(--SecondaryColor);
+}
+.footer .secContent .footerCard .footerDiv {
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--SecondaryColor);
+  padding: 0.5rem 2rem;
+}
+.footer .secContent .footerCard .footerDiv small {
+  font-size: 10px;
+  color: var(--whiteColor);
 }/*# sourceMappingURL=footer.css.map */

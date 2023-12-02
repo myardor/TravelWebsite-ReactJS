@@ -7,6 +7,9 @@ import { FaTwitter, FaInstagram } from "react-icons/fa"
 import { BsListTask } from "react-icons/bs"
 import { TbApps } from "react-icons/tb"
 
+import Aos from "aos"
+import "aos/dist/aos.css"
+
 const Home = () => {
   return (
     <section className='home'>

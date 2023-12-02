@@ -1,6 +1,5 @@
 import React from "react"
 import "./footer.css"
-
 import video2 from "../../assets/video(2).mp4"
 
 import { FiSend } from "react-icons/fi"
@@ -51,7 +50,7 @@ const Footer = () => {
               adventure in life.
             </div>
 
-            <div className='footerSocials'>
+            <div className='footerSocials flex'>
               <AiOutlineTwitter className='icon' />
               <AiFillYoutube className='icon' />
               <AiFillInstagram className='icon' />
@@ -89,6 +88,69 @@ const Footer = () => {
                 Payment
               </li>
             </div>
+            {/* Group Two */}
+            <div className='linkGroup'>
+              <span className='groupTitle'>PARTNERS</span>
+
+              <li className='footerList flex'>
+                <FiChevronRight className='icon' />
+                Bookings
+              </li>
+
+              <li className='footerList flex'>
+                <FiChevronRight className='icon' />
+                Rentcars
+              </li>
+
+              <li className='footerList flex'>
+                <FiChevronRight className='icon' />
+                HostelWorld
+              </li>
+
+              <li className='footerList flex'>
+                <FiChevronRight className='icon' />
+                Ctrip
+              </li>
+
+              <li className='footerList flex'>
+                <FiChevronRight className='icon' />
+                TripAdvisor
+              </li>
+            </div>
+            {/* Group Three*/}
+            <div className='linkGroup'>
+              <span className='groupTitle'>LAST MINUTE</span>
+
+              <li className='footerList flex'>
+                <FiChevronRight className='icon' />
+                London
+              </li>
+
+              <li className='footerList flex'>
+                <FiChevronRight className='icon' />
+                California
+              </li>
+
+              <li className='footerList flex'>
+                <FiChevronRight className='icon' />
+                Indonesia
+              </li>
+
+              <li className='footerList flex'>
+                <FiChevronRight className='icon' />
+                Europe
+              </li>
+
+              <li className='footerList flex'>
+                <FiChevronRight className='icon' />
+                Oceania
+              </li>
+            </div>
+          </div>
+
+          <div className='footerDiv flex'>
+            <small>BEST TRAVEL WEBSITE THEME</small>
+            <small>COPYRIGHTS RESERVED - CHINA 2023</small>
           </div>
         </div>
       </div>
