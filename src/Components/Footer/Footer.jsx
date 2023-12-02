@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./footer.css"
 import video2 from "../../assets/video(2).mp4"
 
@@ -10,7 +10,14 @@ import { AiFillInstagram } from "react-icons/ai"
 import { FaTripadvisor } from "react-icons/fa"
 import { FiChevronRight } from "react-icons/fi"
 
+import Aos from "aos"
+import "aos/dist/aos.css"
+
 const Footer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
   return (
     <section className='footer'>
       <div className='videoDiv'>
@@ -20,14 +27,18 @@ const Footer = () => {
       <div className='secContent container'>
         <div className='contactDiv flex'>
           {/* 文字区 */}
-          <div className='text'>
+          <div data-aos='fade-up' className='text'>
             <small>KEEP IN TOUCH</small>
             <h2>Travel with us</h2>
           </div>
           {/* 输入框 */}
           <div className='inputDiv flex'>
-            <input type='text' placeholder='Enter Email Address' />
-            <button className='btn flex' type='submit'>
+            <input
+              data-aos='fade-up'
+              type='text'
+              placeholder='Enter Email Address'
+            />
+            <button data-aos='fade-up' className='btn flex' type='submit'>
               SEND
               <FiSend className='icon' />
             </button>
@@ -37,12 +48,12 @@ const Footer = () => {
         <div className='footerCard flex'>
           <div className='footerIntro flex'>
             <div className='logoDiv'>
-              <a href='#' className='logo flex'>
+              <a href='#' data-aos='fade-up' className='logo flex'>
                 <MdOutlineTravelExplore className='icon' /> Travel.
               </a>
             </div>
 
-            <div className='footerParagraph'>
+            <div data-aos='fade-up' className='footerParagraph'>
               Explore the beauty of the world and embark on a dreamy journey
               with our travel website! Customize your itinerary and leave
               unforgettable moments. Discover different miracles from the beach
@@ -50,7 +61,7 @@ const Footer = () => {
               adventure in life.
             </div>
 
-            <div className='footerSocials flex'>
+            <div data-aos='fade-up' className='footerSocials flex'>
               <AiOutlineTwitter className='icon' />
               <AiFillYoutube className='icon' />
               <AiFillInstagram className='icon' />
@@ -60,7 +71,11 @@ const Footer = () => {
 
           <div className='footerLinks grid'>
             {/* Group One */}
-            <div className='linkGroup'>
+            <div
+              data-aos='fade-up'
+              data-aos-duration='3000'
+              className='linkGroup'
+            >
               <span className='groupTitle'>OUR AGENCY</span>
 
               <li className='footerList flex'>
@@ -89,7 +104,11 @@ const Footer = () => {
               </li>
             </div>
             {/* Group Two */}
-            <div className='linkGroup'>
+            <div
+              data-aos='fade-up'
+              data-aos-duration='4000'
+              className='linkGroup'
+            >
               <span className='groupTitle'>PARTNERS</span>
 
               <li className='footerList flex'>
@@ -118,7 +137,11 @@ const Footer = () => {
               </li>
             </div>
             {/* Group Three*/}
-            <div className='linkGroup'>
+            <div
+              data-aos='fade-up'
+              data-aos-duration='5000'
+              className='linkGroup'
+            >
               <span className='groupTitle'>LAST MINUTE</span>
 
               <li className='footerList flex'>
