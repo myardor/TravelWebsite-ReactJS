@@ -71,7 +71,7 @@ const Navbar = () => {
             </li>
 
             <button className='btn'>
-              <a href='#'>BOOK NOW</a>
+              <a href='#'>SIGN UP</a>
             </button>
           </ul>
 
