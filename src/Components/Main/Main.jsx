@@ -113,9 +113,10 @@ const Data = [
       "For adrenaline junkies, Queenstown offers a thrilling escape with its bungee jumping, skydiving, and other adventure sports against the backdrop of stunning landscapes.",
   },
 ]
+
 const Main = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 })
+    Aos.init({ duration: 1000 })
   }, [])
   return (
     <section className='main container section'>

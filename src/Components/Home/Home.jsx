@@ -1,9 +1,9 @@
 import React, { useEffect } from "react"
 import "./home.css"
 import video from "../../assets/video.mp4"
-import { CiLocationOn, CiFilter } from "react-icons/ci"
+import { CiLocationOn, CiSearch } from "react-icons/ci"
 import { FiFacebook } from "react-icons/fi"
-import { FaTwitter, FaInstagram } from "react-icons/fa"
+import { FaTwitter, FaInstagram, FaSearch } from "react-icons/fa"
 import { BsListTask } from "react-icons/bs"
 import { TbApps } from "react-icons/tb"
 
@@ -13,7 +13,7 @@ import "aos/dist/aos.css"
 const Home = () => {
   // 动画效果
   useEffect(() => {
-    Aos.init({ duration: 2000 })
+    Aos.init({ duration: 1000 })
   }, [])
   return (
     <section className='home'>
@@ -62,8 +62,8 @@ const Home = () => {
 
           {/* 筛选 */}
           <div className='searchOptions flex'>
-            <CiFilter className='icon' />
-            <span>MORE FILTERS</span>
+            <FaSearch className='icon' />
+            <span>SEARCH</span>
           </div>
         </div>
 

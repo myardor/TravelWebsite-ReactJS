@@ -15,7 +15,7 @@ import "aos/dist/aos.css"
 
 const Footer = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 })
+    Aos.init({ duration: 1000 })
   }, [])
 
   return (
@@ -73,7 +73,7 @@ const Footer = () => {
             {/* Group One */}
             <div
               data-aos='fade-up'
-              data-aos-duration='3000'
+              data-aos-duration='2000'
               className='linkGroup'
             >
               <span className='groupTitle'>OUR AGENCY</span>
@@ -106,7 +106,7 @@ const Footer = () => {
             {/* Group Two */}
             <div
               data-aos='fade-up'
-              data-aos-duration='4000'
+              data-aos-duration='3000'
               className='linkGroup'
             >
               <span className='groupTitle'>PARTNERS</span>
@@ -139,7 +139,7 @@ const Footer = () => {
             {/* Group Three*/}
             <div
               data-aos='fade-up'
-              data-aos-duration='5000'
+              data-aos-duration='4000'
               className='linkGroup'
             >
               <span className='groupTitle'>LAST MINUTE</span>
