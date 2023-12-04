@@ -3,6 +3,7 @@ import "./navbar.css"
 import { MdOutlineTravelExplore } from "react-icons/md"
 import { IoIosCloseCircle } from "react-icons/io"
 import { TbGridDots } from "react-icons/tb"
+import { useNavigate } from "react-router-dom"
 
 const Navbar = () => {
   // 设置导航栏的开启与关闭
@@ -14,6 +15,8 @@ const Navbar = () => {
       setActive("navBar")
     }
   }
+
+  const navigate = useNavigate()
   return (
     <section className='navBarSection'>
       <header className='header flex'>
@@ -70,7 +73,7 @@ const Navbar = () => {
               </a>
             </li>
 
-            <button className='btn'>
+            <button className='btn' onClick={() => navigate("/login")}>
               <a href='#'>SIGN UP</a>
             </button>
           </ul>
