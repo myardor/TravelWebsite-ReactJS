@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import "./main.css"
+import axios from "axios"
 
 import Aos from "aos"
 import "aos/dist/aos.css"
@@ -8,19 +9,23 @@ import _ from "lodash"
 // import icons
 import { FaLocationDot } from "react-icons/fa6"
 import { LuClipboardPaste } from "react-icons/lu"
-import axios from "axios"
+
+const showItemsCount = 6
 
 const Main = () => {
   const [Data, setData] = useState([])
   const [currentData, setCurrentData] = useState([])
-  const [currentIndex, setCurrentIndex] = useState(3)
+  const [currentIndex, setCurrentIndex] = useState(showItemsCount)
 
-  useEffect(async () => {
-    const res = await axios({
-      url: "http://localhost:3003/Data",
-    })
-    setData(res.data)
-    setCurrentData(res.data.slice(0, 3))
+  useEffect(() => {
+    const getData = async () => {
+      const res = await axios({
+        url: "http://localhost:3003/Data",
+      })
+      setData(res.data)
+      setCurrentData(res.data.slice(0, showItemsCount))
+    }
+    getData()
   }, [])
 
   useEffect(() => {
@@ -28,12 +33,12 @@ const Main = () => {
   }, [])
 
   const onClickChange = () => {
-    if (currentIndex === 15) {
+    if (currentIndex === 12) {
       setCurrentIndex(0)
     } else {
-      setCurrentIndex(currentIndex + 3)
+      setCurrentIndex(currentIndex + showItemsCount)
     }
-    setCurrentData(Data.slice(currentIndex, currentIndex + 3))
+    setCurrentData(Data.slice(currentIndex, currentIndex + showItemsCount))
   }
 
   return (

@@ -26,6 +26,7 @@
   padding: 1rem;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+  height: 4rem;
 }
 .header .logo {
   color: var(--blackColor);
@@ -38,6 +39,9 @@
   font-size: 25px;
   color: var(--PrimaryColor);
   transform: translateY(5px);
+}
+.header .navItem .navLink .icon {
+  font-size: 25px;
 }
 @media screen and (max-width: 768px) {
   .header .navBar {
@@ -67,6 +71,8 @@
     padding: 0.5rem 0;
   }
   .header .navBar .navLists .navItem .navLink {
+    display: flex;
+    align-items: center;
     color: var(--textColor);
     font-size: 0.9rem;
     font-weight: 600;
@@ -134,7 +140,7 @@
 }
 @media screen and (min-width: 960px) {
   .header .navBar .navLists .navItem {
-    padding: 0 0.7rem;
+    padding: 0 0.3rem;
   }
 }
 @media screen and (min-width: 1240px) {

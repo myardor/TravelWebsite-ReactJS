@@ -1,12 +1,44 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import "./Login.css"
 import "@fortawesome/fontawesome-free/css/all.min.css" // 导入 Font Awesome 样式表
 import { useNavigate } from "react-router-dom"
+
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const Login = () => {
   const [active, setActive] = useState(false)
 
   const navigate = useNavigate()
+
+  // 施加动画效果
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+  }, [])
+
+  const [inputValue, setInputValue] = useState("")
+  const [error, setError] = useState("")
+
+  const handleInputChange = e => {
+    const value = e.target.value
+    // console.log(value)
+    setInputValue(value)
+
+    // 调用规则校验函数
+    validateInput(value)
+  }
+
+  const validateInput = value => {
+    // 简单的规则校验，例如检查是否为空
+    if (value.trim() === "") {
+      setError("输入不能为空")
+    } else {
+      setError("")
+      localStorage.setItem("accountName", value)
+    }
+    // 你可以添加其他规则校验逻辑
+  }
+
   return (
     <>
       <div className='loginBody'>
@@ -29,7 +61,24 @@ const Login = () => {
                 </a>
               </div>
               <span>or use your email for registration</span>
-              <input type='text' placeholder='Name' />
+              <input
+                type='text'
+                placeholder='Name'
+                onBlur={handleInputChange}
+              />
+              {error && (
+                <p
+                  className='nameError'
+                  style={{
+                    color: "red",
+                    margin: "0",
+                    height: "10px",
+                    fontSize: "10px",
+                  }}
+                >
+                  {error}
+                </p>
+              )}
               <input type='text' placeholder='Email' />
               <input type='password' placeholder='Password' />
               <button onClick={() => navigate("/")}>Sign Up</button>
@@ -75,7 +124,7 @@ const Login = () => {
                 </button>
               </div>
 
-              <div className='toggle-panel toggle-right'>
+              <div className='toggle-panel toggle-right' data-aos='fade-left'>
                 <h1>Hello Friend!</h1>
                 <p>
                   Register with your personal details to use all site features

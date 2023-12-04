@@ -7,21 +7,16 @@ import Navbar from "../../Components/Navbar/Navbar"
 import "./index.css"
 import { Outlet } from "react-router-dom"
 import Stay from "../Stay/Stay"
-import Index from "../Index"
 
-const Layout = () => {
+const Index = () => {
   return (
     <>
-      <Navbar />
-      <Outlet />
-      {/* <Outlet>
-        <Stay />
-      </Outlet> */}
-      {/* <Home />
+      {/* <Navbar /> */}
+      <Home />
       <Main />
-      <Footer /> */}
+      <Footer />
     </>
   )
 }
 
-export default Layout
+export default Index

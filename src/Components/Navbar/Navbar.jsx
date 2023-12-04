@@ -1,9 +1,14 @@
 import React, { useState } from "react"
 import "./navbar.css"
+import { useNavigate } from "react-router-dom"
+
 import { FaPlaneDeparture } from "react-icons/fa"
 import { IoIosCloseCircle } from "react-icons/io"
 import { TbGridDots } from "react-icons/tb"
-import { useNavigate } from "react-router-dom"
+import { MdHotel } from "react-icons/md"
+import { MdFlight } from "react-icons/md"
+import { FaCar } from "react-icons/fa"
+import { LuPalmtree } from "react-icons/lu"
 
 const Navbar = () => {
   // 设置导航栏的开启与关闭
@@ -17,12 +22,13 @@ const Navbar = () => {
   }
 
   const navigate = useNavigate()
+
   return (
     <section className='navBarSection'>
       <header className='header flex'>
         <div className='logoDiv'>
           <a href='#' className='logo flex'>
-            <h1>
+            <h1 onClick={() => navigate("/")}>
               <FaPlaneDeparture className='icon' /> Travel.
             </h1>
           </a>
@@ -31,51 +37,64 @@ const Navbar = () => {
         <div className={active}>
           {/* 导航栏 */}
           <ul className='navLists flex'>
-            <li className='navItem'>
-              <a href='#' className='navLink'>
-                Home
+            <li className='navItem' onClick={() => navigate("/")}>
+              <a href='#' className='navLink flex'>
+                <MdHotel className='icon' />
+                Stays
               </a>
             </li>
 
             <li className='navItem'>
-              <a href='#' className='navLink'>
-                Packages
+              <a href='#' className='navLink flex'>
+                <MdFlight className='icon' />
+                Flights
               </a>
             </li>
 
             <li className='navItem'>
-              <a href='#' className='navLink'>
-                Shop
+              <a href='#' className='navLink flex'>
+                <FaCar className='icon' />
+                Car rentals
               </a>
             </li>
 
             <li className='navItem'>
-              <a href='#' className='navLink'>
-                About
+              <a href='#' className='navLink flex'>
+                <LuPalmtree className='icon' />
+                Attractions
               </a>
             </li>
 
-            <li className='navItem'>
-              <a href='#' className='navLink'>
-                Pages
+            {/* <li className='navItem'>
+              <a href='#' className='navLink flex'>
+                <MdHotel className='icon' />
+                Flight+Hotel
               </a>
-            </li>
+            </li> */}
 
-            <li className='navItem'>
-              <a href='#' className='navLink'>
-                News
+            {/* <li className='navItem'>
+              <a href='#' className='navLink flex'>
+                <FaTaxi className='icon' />
+                Airport taxis
               </a>
-            </li>
+            </li> */}
 
+            {/* 
             <li className='navItem'>
               <a href='#' className='navLink'>
                 Contact
               </a>
-            </li>
+            </li> */}
 
-            <button className='btn' onClick={() => navigate("/login")}>
-              <a href='#'>SIGN UP</a>
-            </button>
+            {localStorage.getItem("accountName") ? (
+              <a style={{ color: "blue" }}>
+                {localStorage.getItem("accountName")}
+              </a>
+            ) : (
+              <button className='btn' onClick={() => navigate("/login")}>
+                <a href='#'>SIGN UP</a>
+              </button>
+            )}
           </ul>
 
           {/* 关闭导航栏 */}
