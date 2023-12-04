@@ -37,28 +37,28 @@ const Navbar = () => {
         <div className={active}>
           {/* 导航栏 */}
           <ul className='navLists flex'>
-            <li className='navItem' onClick={() => navigate("/")}>
+            <li className='navItem' onClick={() => navigate("/stay")}>
               <a href='#' className='navLink flex'>
                 <MdHotel className='icon' />
                 Stays
               </a>
             </li>
 
-            <li className='navItem'>
+            <li className='navItem' onClick={() => navigate("/Flight")}>
               <a href='#' className='navLink flex'>
                 <MdFlight className='icon' />
                 Flights
               </a>
             </li>
 
-            <li className='navItem'>
+            <li className='navItem' onClick={() => navigate("/carRent")}>
               <a href='#' className='navLink flex'>
                 <FaCar className='icon' />
                 Car rentals
               </a>
             </li>
 
-            <li className='navItem'>
+            <li className='navItem' onClick={() => navigate("/attraction")}>
               <a href='#' className='navLink flex'>
                 <LuPalmtree className='icon' />
                 Attractions
