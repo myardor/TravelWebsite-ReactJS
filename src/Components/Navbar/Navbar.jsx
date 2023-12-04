@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "./navbar.css"
-import { MdOutlineTravelExplore } from "react-icons/md"
+import { FaPlaneDeparture } from "react-icons/fa"
 import { IoIosCloseCircle } from "react-icons/io"
 import { TbGridDots } from "react-icons/tb"
 import { useNavigate } from "react-router-dom"
@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className='logoDiv'>
           <a href='#' className='logo flex'>
             <h1>
-              <MdOutlineTravelExplore className='icon' /> Travel.
+              <FaPlaneDeparture className='icon' /> Travel.
             </h1>
           </a>
         </div>

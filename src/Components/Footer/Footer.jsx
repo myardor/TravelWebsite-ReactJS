@@ -3,7 +3,7 @@ import "./footer.css"
 import video2 from "../../assets/video(2).mp4"
 
 import { FiSend } from "react-icons/fi"
-import { MdOutlineTravelExplore } from "react-icons/md"
+import { FaPlaneDeparture } from "react-icons/fa"
 import { AiOutlineTwitter } from "react-icons/ai"
 import { AiFillYoutube } from "react-icons/ai"
 import { AiFillInstagram } from "react-icons/ai"
@@ -49,7 +49,7 @@ const Footer = () => {
           <div className='footerIntro flex'>
             <div className='logoDiv'>
               <a href='#' data-aos='fade-up' className='logo flex'>
-                <MdOutlineTravelExplore className='icon' /> Travel.
+                <FaPlaneDeparture className='icon' /> Travel.
               </a>
             </div>
 

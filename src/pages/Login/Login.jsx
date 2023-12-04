@@ -4,18 +4,6 @@ import "@fortawesome/fontawesome-free/css/all.min.css" // 导入 Font Awesome �
 import { useNavigate } from "react-router-dom"
 
 const Login = () => {
-  // const container = document.getElementById("container"),
-  //   registerBtn = document.getElementById("register"),
-  //   loginBtn = document.getElementById("login")
-
-  // registerBtn.addEventListener("click", () => {
-  //   container.classList.add("active")
-  // })
-
-  // loginBtn.addEventListener("click", () => {
-  //   container.classList.remove("active")
-  // })
-
   const [active, setActive] = useState(false)
 
   const navigate = useNavigate()
