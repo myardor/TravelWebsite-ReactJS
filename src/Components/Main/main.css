@@ -20,6 +20,11 @@
 .main {
   width: 100%;
 }
+.main .secTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .main .secTitle .title {
   position: relative;
   width: -moz-max-content;
@@ -37,6 +42,12 @@
   background: var(--SecondaryColor);
   height: 5px;
   z-index: -1;
+}
+.main .secTitle .btn {
+  height: -moz-max-content;
+  height: max-content;
+  color: var(--whiteColor);
+  font-weight: 500;
 }
 .main .secContent {
   justify-content: center;

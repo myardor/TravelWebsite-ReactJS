@@ -1,0 +1,166 @@
+{
+  "Data": [
+    {
+      "id": 1,
+      "imgSrc": "/static/media/img(1).ce49d72c93096bb48ca1.jpg",
+      "destTitle": "Bora Bora",
+      "location": "New Zealand",
+      "grade": "CULTURAL RELAX",
+      "fees": "$700",
+      "description": "The epitome of romance, Bora Bora is one of the best travel destinations in the World. This place is known for its luxurious stays and adventurous activities."
+    },
+    {
+      "id": 2,
+      "imgSrc": "/static/media/img(2).7614bd18a1d065b1e864.jpg",
+      "destTitle": "Santorini",
+      "location": "Greece",
+      "grade": "SCENIC GETAWAY",
+      "fees": "$850",
+      "description": "Santorini, with its iconic white-washed buildings, stunning sunsets, and crystal-clear waters, is a dream destination for those seeking beauty and tranquility."
+    },
+    {
+      "id": 3,
+      "imgSrc": "/static/media/img(3).be06b9f93032b769e43c.jpg",
+      "destTitle": "Kyoto",
+      "location": "Japan",
+      "grade": "CULTURAL ENCHANTMENT",
+      "fees": "$600",
+      "description": "Immerse yourself in the rich cultural heritage of Kyoto, where ancient temples, traditional tea ceremonies, and picturesque gardens await your exploration."
+    },
+    {
+      "id": 4,
+      "imgSrc": "/static/media/img(4).2be30b6421d24ad88acf.jpg",
+      "destTitle": "Patagonia",
+      "location": "Argentina",
+      "grade": "ADVENTURE ESCAPE",
+      "fees": "$1200",
+      "description": "For the thrill-seekers, Patagonia offers breathtaking landscapes, rugged mountains, and exciting outdoor activities, making it a paradise for adventure enthusiasts."
+    },
+    {
+      "id": 5,
+      "imgSrc": "/static/media/img(5).57cae63634f68215fa23.jpg",
+      "destTitle": "Istanbul",
+      "location": "Turkey",
+      "grade": "HISTORICAL DISCOVERY",
+      "fees": "$750",
+      "description": "Step into the crossroads of history in Istanbul, where ancient architecture, vibrant markets, and the blend of cultures create a mesmerizing experience for travelers."
+    },
+    {
+      "id": 6,
+      "imgSrc": "/static/media/img(6).7f3dcde5eddd481e0c24.jpg",
+      "destTitle": "Maui",
+      "location": "Hawaii",
+      "grade": "TROPICAL PARADISE",
+      "fees": "$900",
+      "description": "Escape to the tropical paradise of Maui, where lush landscapes, pristine beaches, and a laid-back atmosphere invite you to unwind and enjoy the beauty of nature."
+    },
+    {
+      "id": 7,
+      "imgSrc": "/static/media/img(7).06140794f8b51c294600.jpg",
+      "destTitle": "Barcelona",
+      "location": "Spain",
+      "grade": "ARTISTIC RETREAT",
+      "fees": "$800",
+      "description": "Discover the artistic and architectural wonders of Barcelona, from the famous works of Gaudí to the vibrant street art, creating a dynamic and inspiring atmosphere."
+    },
+    {
+      "id": 8,
+      "imgSrc": "/static/media/img(8).a1dd3aed080a9e6f98ea.jpg",
+      "destTitle": "Marrakech",
+      "location": "Morocco",
+      "grade": "EXOTIC ADVENTURE",
+      "fees": "$700",
+      "description": "Embark on an exotic adventure in Marrakech, where the bustling souks, stunning palaces, and the vibrant colors of the city transport you to a magical and enchanting world."
+    },
+    {
+      "id": 9,
+      "imgSrc": "/static/media/img(9).f557fe098cb33cd229df.jpg",
+      "destTitle": "Queenstown",
+      "location": "New Zealand",
+      "grade": "THRILLING ESCAPE",
+      "fees": "$950",
+      "description": "For adrenaline junkies, Queenstown offers a thrilling escape with its bungee jumping, skydiving, and other adventure sports against the backdrop of stunning landscapes."
+    },
+    {
+      "id": 10,
+      "imgSrc": "/static/media/img(10).39c36d4f10636b57b661.jpg",
+      "destTitle": "Grand Canyon",
+      "location": "Arizona, USA",
+      "grade": "NATURAL WONDER",
+      "fees": "$800",
+      "description": "Explore the breathtaking beauty of the Grand Canyon, known for its stunning rock formations and vast, awe-inspiring landscapes."
+    },
+    {
+      "id": 11,
+      "imgSrc": "/static/media/img(11).983007c59949881277f2.jpg",
+      "destTitle": "Santorini",
+      "location": "Greece",
+      "grade": "ROMANTIC GETAWAY",
+      "fees": "$900",
+      "description": "Experience the romance of Santorini with its iconic white-washed buildings, crystal-clear waters, and mesmerizing sunsets over the Aegean Sea."
+    },
+    {
+      "id": 12,
+      "imgSrc": "/static/media/img(12).b542e4969f487fe9a813.jpg",
+      "destTitle": "Machu Picchu",
+      "location": "Peru",
+      "grade": "HISTORICAL WONDERS",
+      "fees": "$850",
+      "description": "Marvel at the ancient ruins of Machu Picchu, a UNESCO World Heritage site nestled high in the Andes mountains, and discover the mysteries of the Inca civilization."
+    },
+    {
+      "id": 13,
+      "imgSrc": "/static/media/img(13).30363f48d07988d4b8ae.jpg",
+      "destTitle": "Kyoto",
+      "location": "Japan",
+      "grade": "CULTURAL ENCHANTMENT",
+      "fees": "$750",
+      "description": "Immerse yourself in the cultural enchantment of Kyoto, where traditional tea houses, ancient temples, and beautiful cherry blossoms create a timeless atmosphere."
+    },
+    {
+      "id": 14,
+      "imgSrc": "/static/media/img(14).51105f23e965eb0b17ef.jpg",
+      "destTitle": "Victoria Falls",
+      "location": "Zambia/Zimbabwe",
+      "grade": "NATURAL WONDER",
+      "fees": "$820",
+      "description": "Witness the awe-inspiring beauty of Victoria Falls, one of the largest waterfalls in the world, with its powerful cascades and misty rainbows."
+    },
+    {
+      "id": 15,
+      "imgSrc": "/static/media/img(15).61e275cb1347fde0ec96.jpg",
+      "destTitle": "Banff National Park",
+      "location": "Canada",
+      "grade": "SCENIC BEAUTY",
+      "fees": "$890",
+      "description": "Discover the scenic beauty of Banff National Park, where turquoise lakes, towering mountains, and abundant wildlife create a picturesque Canadian landscape."
+    },
+    {
+      "id": 16,
+      "imgSrc": "/static/media/img(16).dcfd1e5e03f837f35486.jpg",
+      "destTitle": "Great Barrier Reef",
+      "location": "Australia",
+      "grade": "UNDERWATER PARADISE",
+      "fees": "$920",
+      "description": "Explore the underwater paradise of the Great Barrier Reef, home to a diverse range of marine life and vibrant coral formations."
+    },
+    {
+      "id": 17,
+      "imgSrc": "/static/media/img(17).431a6e533144b4afd731.jpg",
+      "destTitle": "Serengeti National Park",
+      "location": "Tanzania",
+      "grade": "WILDLIFE SAFARI",
+      "fees": "$870",
+      "description": "Embark on a wildlife safari in Serengeti National Park, where the annual migration of wildebeest and other animals creates a spectacular natural phenomenon."
+    },
+    {
+      "id": 18,
+      "imgSrc": "/static/media/img(18).00574107d1698c677dfa.jpg",
+      "destTitle": "Barcelona",
+      "location": "Spain",
+      "grade": "CULTURAL DELIGHT",
+      "fees": "$880",
+      "description": "Immerse yourself in the cultural delights of Barcelona, with its unique architecture, vibrant street life, and rich artistic heritage."
+    }
+  ]
+}
