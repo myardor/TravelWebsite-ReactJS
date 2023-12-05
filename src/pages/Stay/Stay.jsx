@@ -12,7 +12,7 @@ import { IoIosArrowDown } from "react-icons/io"
 
 import Aos from "aos"
 import "aos/dist/aos.css"
-import Slider from "react-slick"
+import Slider from "../../Components/Slider/Slider"
 
 const Stay = () => {
   // 动画效果
@@ -153,6 +153,8 @@ const Stay = () => {
           </div>
         </div>
       </section>
+
+      {/* 房间轮播图 */}
 
       <Slider />
     </>
