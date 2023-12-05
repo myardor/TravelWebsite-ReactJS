@@ -1,1 +1,253 @@
-/*# sourceMappingURL=Stay.css.map */
+@charset "UTF-8";
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.stay {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.stay video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.stay .homeContent {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 8rem 1.5rem 3rem;
+  row-gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: auto;
+  color: var(--whiteColor);
+  z-index: 2;
+}
+.stay .homeContent .textDiv {
+  padding: 2rem 0;
+}
+.stay .homeContent .textDiv .smallText {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.stay .homeContent .textDiv .homeTitle {
+  position: relative;
+  font-size: 1.8rem;
+}
+.stay .homeContent .cardDiv {
+  position: relative;
+  padding: 2rem 1rem;
+  background: var(--whiteColor);
+  border-radius: 10px;
+  gap: 1rem;
+}
+.stay .homeContent .cardDiv label {
+  display: block;
+  color: var(--textColor);
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.stay .homeContent .cardDiv .label_total {
+  justify-content: space-between;
+  align-items: center;
+}
+.stay .homeContent .cardDiv .label_total .total {
+  color: var(--textColor);
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.stay .homeContent .cardDiv .input {
+  position: relative;
+  height: 40px;
+  padding: 0 1rem;
+  background: var(--inputColor);
+  border-radius: 3rem;
+  /*横条样式*/
+}
+.stay .homeContent .cardDiv .input input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+}
+.stay .homeContent .cardDiv .input input::-moz-placeholder {
+  font-size: 13px;
+}
+.stay .homeContent .cardDiv .input input::placeholder {
+  font-size: 13px;
+}
+.stay .homeContent .cardDiv .input .icon {
+  font-size: 18px;
+  color: var(--PrimaryColor) !important;
+  margin-left: 10px;
+}
+.stay .homeContent .cardDiv .input input[type=range] {
+  background: blue;
+}
+.stay .homeContent .cardDiv .stayInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  padding: 1rem;
+  top: 6rem;
+  right: 1rem;
+  width: 31.5%;
+  height: 10rem;
+  background-color: var(--inputColor);
+  border-radius: 10px;
+}
+.stay .homeContent .cardDiv .stayInput .inputItem {
+  justify-content: space-between;
+}
+.stay .homeContent .cardDiv .stayInput .inputItem .text {
+  color: var(--blackColor);
+}
+.stay .homeContent .cardDiv .stayInput .inputItem .count {
+  width: 5rem;
+  border: 1px solid var(--PrimaryColor);
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: var(--blackColor);
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.stay .homeContent .cardDiv .stayInput .inputItem .count button {
+  border: none;
+  background-color: var(--inputColor);
+  border-radius: 10px;
+  font-size: 1.25rem;
+  width: 1.5rem;
+}
+.stay .homeContent .cardDiv .stayInput .btn {
+  left: 50%;
+  bottom: 0;
+  transform: translateX(50%);
+  width: 50%;
+  color: var(--whiteColor);
+  font-size: 1rem;
+}
+.stay .homeContent .cardDiv .searchOptions {
+  position: absolute;
+  background: var(--gradientColor);
+  width: -moz-max-content;
+  width: max-content;
+  bottom: -0.7rem;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+  padding: 5px 1rem;
+  border-radius: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  cursor: pointer;
+}
+.stay .homeContent .cardDiv .searchOptions:hover {
+  background: var(--PrimaryColor);
+}
+.stay .homeContent .cardDiv .searchOptions .icon {
+  font-size: 18px;
+}
+.stay .homeContent .cardDiv .searchOptions span {
+  font-size: 13px;
+}
+.stay .homeContent .homeFooterIcons {
+  margin-top: 5rem;
+  width: 100%;
+  justify-content: space-between;
+}
+.stay .homeContent .homeFooterIcons .icon {
+  font-size: 20px;
+  margin: 0 5px;
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+.stay .homeContent .homeFooterIcons .icon:hover {
+  color: var(--PrimaryColor);
+}
+
+@media screen and (min-width: 500px) {
+  .stay .homeContent .textDiv .smallText {
+    font-size: 16px;
+  }
+  .stay .homeContent .textDiv .homeTitle {
+    position: relative;
+    font-size: 2.3rem;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .stay .homeContent .textDiv .homeTitle::after {
+    position: absolute;
+    content: "";
+    background: var(--SecondaryColor);
+    width: 145px;
+    height: 5px;
+    right: 0;
+    bottom: 5px;
+    z-index: -1;
+  }
+  .stay .homeContent .cardDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 660px) {
+  .stay .homeContent .cardDiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 940px) {
+  .stay {
+    height: 85vh;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .stay {
+    height: 95vh;
+  }
+  .stay .homeContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .stay .homeContent .cardDiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .stay .homeContent .cardDiv .input {
+    margin-bottom: 1rem;
+  }
+  .stay .homeContent .cardDiv .searchOptions {
+    bottom: -1rem;
+    padding: 8px 1rem;
+  }
+  .stay .homeContent .cardDiv .searchOptions span {
+    font-size: 17px;
+  }
+}/*# sourceMappingURL=Stay.css.map */

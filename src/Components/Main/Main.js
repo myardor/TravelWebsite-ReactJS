@@ -20,7 +20,7 @@ const Main = () => {
   useEffect(() => {
     const getData = async () => {
       const res = await axios({
-        url: "http://localhost:3002/Data",
+        url: "http://localhost:3004/Data",
       })
       setData(res.data)
       setCurrentData(res.data.slice(0, showItemsCount))
