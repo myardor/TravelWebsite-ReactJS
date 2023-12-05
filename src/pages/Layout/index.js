@@ -8,6 +8,7 @@ const Layout = () => {
   return (
     <>
       <Navbar />
+      {/* 二级路由出口（导航栏下部） */}
       <Outlet />
     </>
   )

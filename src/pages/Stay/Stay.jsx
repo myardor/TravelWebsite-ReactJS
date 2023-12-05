@@ -3,8 +3,6 @@ import Home from "../../Components/Home/Home"
 
 import stayVideo from "../../assets/stayVideo.mp4"
 
-// import RoomInput from "../../Components/RoomInput/RoomInput"
-
 const Stay = () => {
   return (
     <>
