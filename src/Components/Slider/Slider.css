@@ -41,9 +41,37 @@
 .slider ul li h5 {
   color: var(--textColor);
 }
-.slider .prev {
+.slider button {
   position: absolute;
-  left: 9rem;
+  padding: 1rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
   top: 50%;
   transform: translateY(50%);
+  width: 1.25rem;
+}
+.slider button .IconLeft {
+  position: absolute;
+  left: 30%;
+  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider button .IconRight {
+  position: absolute;
+  right: 30%;
+  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider .prev {
+  left: 9rem;
+  border-radius: 0 50% 50% 0;
+}
+.slider .next {
+  right: 9rem;
+  border-radius: 50% 0 0 50%;
 }/*# sourceMappingURL=Slider.css.map */
