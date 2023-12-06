@@ -155,7 +155,6 @@ const Stay = () => {
       </section>
 
       {/* 房间轮播图 */}
-
       <Slider />
     </>
   )
