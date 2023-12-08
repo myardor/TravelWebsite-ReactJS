@@ -13,6 +13,7 @@ import { IoIosArrowDown } from "react-icons/io"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import Slider from "../../Components/Slider/Slider"
+import Footer from "../../Components/Footer/Footer"
 
 const Stay = () => {
   // 动画效果
@@ -156,6 +157,8 @@ const Stay = () => {
 
       {/* 房间轮播图 */}
       <Slider />
+
+      <Footer />
     </>
   )
 }

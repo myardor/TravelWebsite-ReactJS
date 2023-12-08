@@ -7,6 +7,7 @@ import { IoIosCloseCircle } from "react-icons/io"
 import { TbGridDots } from "react-icons/tb"
 import { MdHotel } from "react-icons/md"
 import { MdFlight } from "react-icons/md"
+import { MdHome } from "react-icons/md"
 import { FaCar } from "react-icons/fa"
 import { LuPalmtree } from "react-icons/lu"
 
@@ -37,20 +38,26 @@ const Navbar = () => {
         <div className={active}>
           {/* 导航栏 */}
           <ul className='navLists flex'>
+            {/* home */}
+            <li className='navItem' onClick={() => navigate("/")}>
+              <a href='#' className='navLink flex'>
+                <MdHome className='icon' />
+                Home
+              </a>
+            </li>
+            {/* stay */}
             <li className='navItem' onClick={() => navigate("/stay")}>
               <a href='#' className='navLink flex'>
                 <MdHotel className='icon' />
                 Stays
               </a>
             </li>
-
-            <li className='navItem' onClick={() => navigate("/Flight")}>
+            <li className='navItem' onClick={() => navigate("/flight")}>
               <a href='#' className='navLink flex'>
                 <MdFlight className='icon' />
-                Flights
+                Flight
               </a>
             </li>
-
             <li className='navItem' onClick={() => navigate("/carRent")}>
               <a href='#' className='navLink flex'>
                 <FaCar className='icon' />

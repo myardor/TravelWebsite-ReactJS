@@ -30,6 +30,7 @@ const Slider = () => {
   return (
     <div className='slider'>
       <h2>Browse by property type</h2>
+      {/* hotels */}
       <ul>
         <li className='sliderItem'>
           <img
@@ -68,10 +69,12 @@ const Slider = () => {
           />
         </li>
       </ul>
-      <button className=' prev ' onClick={handlePrev}>
+
+      {/* prev and next buttons */}
+      <button className='prev bn632-hover bn26' onClick={handlePrev}>
         <IoIosArrowBack className='IconLeft' />
       </button>
-      <button className='next ' onClick={handleNext}>
+      <button className='next bn632-hover bn26' onClick={handleNext}>
         <IoIosArrowForward className='IconRight' />
       </button>
     </div>
