@@ -30,6 +30,7 @@
 }
 .slider ul {
   display: flex;
+  transition: 0.3s ease;
 }
 .slider ul li {
   height: 100%;
@@ -37,6 +38,7 @@
   border: 1px solid var(--textColor);
   border-radius: 20px;
   padding-bottom: 2rem;
+  cursor: pointer;
 }
 .slider ul li img {
   width: 300px;
@@ -52,11 +54,70 @@
 .slider ul li .itemText .itemScore {
   width: 1.25rem;
   height: 1.25rem;
-  padding: 0 0.25rem;
+  font-size: 15px;
+  padding: 0.25rem 0.5rem;
   margin-right: 0.5rem;
   border-radius: 10px;
   background-color: var(--SecondaryColor);
 }
 .slider ul li .itemText .itemAssess {
   font-size: 13px;
+}
+.slider button {
+  position: absolute;
+  padding: 1rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(50%);
+  width: 1.25rem;
+}
+.slider .prev {
+  left: 0rem;
+  border-radius: 0 50% 50% 0;
+}
+.slider .prev .IconLeft {
+  position: absolute;
+  left: 20%;
+  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider .next {
+  right: 0rem;
+  border-radius: 50% 0 0 50%;
+}
+.slider .next .IconRight {
+  position: absolute;
+  right: 20%;
+  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider .bn632-hover {
+  width: 2rem;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.slider .bn632-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.slider .bn632-hover:focus {
+  outline: none;
+}
+.slider .bn632-hover.bn26 {
+  background-image: var(--gradientColor);
 }/*# sourceMappingURL=Slider.css.map */

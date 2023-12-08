@@ -158,7 +158,7 @@ const Stay = () => {
       {/* 房间轮播图 */}
       <Slider />
 
-      <Footer />
+      <Footer data-aos='fade-up' />
     </>
   )
 }
