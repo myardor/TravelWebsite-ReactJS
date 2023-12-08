@@ -17,9 +17,9 @@
 }
 
 .slider {
-  margin: 1rem auto;
+  margin: 1.8rem auto 3rem;
   position: relative;
-  width: 1260px;
+  width: 78.75rem;
   overflow: hidden;
 }
 .slider h2 {
@@ -120,4 +120,23 @@
 }
 .slider .bn632-hover.bn26 {
   background-image: var(--gradientColor);
+}
+
+@media screen and (max-width: 1240px) {
+  .slider {
+    width: 59.0626rem;
+  }
+}
+@media screen and (max-width: 940px) {
+  .slider {
+    width: 39.375rem;
+  }
+  .slider ul li img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .slider {
+    width: 19.6875rem;
+  }
 }/*# sourceMappingURL=Slider.css.map */

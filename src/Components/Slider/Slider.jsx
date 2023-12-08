@@ -113,7 +113,7 @@ const Slider = () => {
   const handleNext = () => {
     // 判断
     if (activeIndex !== 6) {
-      setMoveDistance(moveDistance - 314.4)
+      setMoveDistance(moveDistance - 19.65)
       setActiveIndex(activeIndex + 1)
     }
   }
@@ -121,7 +121,7 @@ const Slider = () => {
   const handlePrev = () => {
     // 判断
     if (activeIndex !== 0) {
-      setMoveDistance(moveDistance + 314.4)
+      setMoveDistance(moveDistance + 19.65)
       setActiveIndex(activeIndex - 1)
     }
   }
@@ -129,7 +129,7 @@ const Slider = () => {
     <div className='slider' data-aos='fade-up'>
       <h2>Browse by property type</h2>
       {/* hotels */}
-      <ul style={{ transform: `translateX(${moveDistance}px)` }}>
+      <ul style={{ transform: `translateX(${moveDistance}rem)` }}>
         {hotelData.map(
           ({ imgUrl, itemTitle, itemLocation, itemScore, itemAssess }) => (
             <li className='sliderItem' key={imgUrl}>

@@ -18,9 +18,10 @@
 
 .slider {
   // 设置居中对齐
-  margin: 1rem auto;
+  margin: 1.8rem auto 3rem;
   position: relative;
-  width: 1260px;
+  // width: 1260px;
+  width: 78.75rem;
   overflow: hidden;
 
   h2 {
@@ -40,7 +41,6 @@
       border: 1px solid var(--textColor);
       border-radius: 20px;
       padding-bottom: 2rem;
-      // transform: translateX(-628.8px); 314.4px
       cursor: pointer;
 
       img {
@@ -144,5 +144,32 @@
   .bn632-hover.bn26 {
     background-image: var(--gradientColor);
     // box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .slider {
+    width: 59.0626rem;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .slider {
+    width: 39.375rem;
+    // width: 48rem;
+
+    ul {
+      li {
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .slider {
+    width: 19.6875rem;
   }
 }
