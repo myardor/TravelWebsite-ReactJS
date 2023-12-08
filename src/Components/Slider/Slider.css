@@ -17,10 +17,10 @@
 }
 
 .slider {
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 8.5rem;
+  margin: 1rem auto;
   position: relative;
+  width: 1260px;
+  overflow: hidden;
 }
 .slider h2 {
   width: -moz-max-content;
@@ -30,75 +30,33 @@
 }
 .slider ul {
   display: flex;
-  justify-content: center;
-  margin: auto;
 }
 .slider ul li {
-  width: 25%;
-  padding: 0 0.5rem;
+  height: 100%;
+  margin: 0 0.4rem;
+  border: 1px solid var(--textColor);
+  border-radius: 20px;
+  padding-bottom: 2rem;
 }
 .slider ul li img {
-  border-radius: 10px;
+  width: 300px;
+  border-radius: 20px 20px 0 0;
 }
-.slider ul li h5 {
+.slider ul li .itemText {
+  margin: 0.4rem 0.6rem 0.6rem 0.6rem;
   color: var(--textColor);
 }
-.slider button {
-  position: absolute;
-  padding: 1rem 0.5rem;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 3rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  top: 50%;
-  transform: translateY(50%);
+.slider ul li .itemText .itemLocation {
+  font-size: 13px;
+}
+.slider ul li .itemText .itemScore {
   width: 1.25rem;
+  height: 1.25rem;
+  padding: 0 0.25rem;
+  margin-right: 0.5rem;
+  border-radius: 10px;
+  background-color: var(--SecondaryColor);
 }
-.slider button .IconLeft {
-  position: absolute;
-  left: 30%;
-  transform: translateX(-50%);
-  top: 50%;
-  transform: translateY(-50%);
-}
-.slider button .IconRight {
-  position: absolute;
-  right: 30%;
-  transform: translateX(-50%);
-  top: 50%;
-  transform: translateY(-50%);
-}
-.slider .prev {
-  left: 7.5rem;
-  border-radius: 0 50% 50% 0;
-}
-.slider .next {
-  right: 7.5rem;
-  border-radius: 50% 0 0 50%;
-}
-.slider .bn632-hover {
-  width: 2rem;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  cursor: pointer;
-  text-align: center;
-  border: none;
-  background-size: 100% 100%;
-  border-radius: 50%;
-  moz-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-.slider .bn632-hover:hover {
-  background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-.slider .bn632-hover:focus {
-  outline: none;
-}
-.slider .bn632-hover.bn26 {
-  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+.slider ul li .itemText .itemAssess {
+  font-size: 13px;
 }/*# sourceMappingURL=Slider.css.map */
