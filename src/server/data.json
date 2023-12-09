@@ -2,7 +2,7 @@
   "Data": [
     {
       "id": 1,
-      "imgSrc": "/static/media/img(1).ce49d72c93096bb48ca1.jpg",
+      "imgSrc": "https://images.pexels.com/photos/572689/pexels-photo-572689.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Bora Bora",
       "location": "New Zealand",
       "grade": "CULTURAL RELAX",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "imgSrc": "/static/media/img(2).7614bd18a1d065b1e864.jpg",
+      "imgSrc": "https://images.pexels.com/photos/808467/pexels-photo-808467.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Santorini",
       "location": "Greece",
       "grade": "SCENIC GETAWAY",
@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "imgSrc": "/static/media/img(3).be06b9f93032b769e43c.jpg",
+      "imgSrc": "https://images.pexels.com/photos/2407783/pexels-photo-2407783.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Kyoto",
       "location": "Japan",
       "grade": "CULTURAL ENCHANTMENT",
@@ -29,7 +29,7 @@
     },
     {
       "id": 4,
-      "imgSrc": "/static/media/img(4).2be30b6421d24ad88acf.jpg",
+      "imgSrc": "https://images.pexels.com/photos/760980/pexels-photo-760980.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Patagonia",
       "location": "Argentina",
       "grade": "ADVENTURE ESCAPE",
@@ -38,7 +38,7 @@
     },
     {
       "id": 5,
-      "imgSrc": "/static/media/img(5).57cae63634f68215fa23.jpg",
+      "imgSrc": "https://images.pexels.com/photos/2463951/pexels-photo-2463951.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Istanbul",
       "location": "Turkey",
       "grade": "HISTORICAL DISCOVERY",
@@ -47,7 +47,7 @@
     },
     {
       "id": 6,
-      "imgSrc": "/static/media/img(6).7f3dcde5eddd481e0c24.jpg",
+      "imgSrc": "https://images.pexels.com/photos/2226900/pexels-photo-2226900.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Maui",
       "location": "Hawaii",
       "grade": "TROPICAL PARADISE",
@@ -56,7 +56,7 @@
     },
     {
       "id": 7,
-      "imgSrc": "/static/media/img(7).06140794f8b51c294600.jpg",
+      "imgSrc": "https://images.pexels.com/photos/710263/pexels-photo-710263.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Barcelona",
       "location": "Spain",
       "grade": "ARTISTIC RETREAT",
@@ -65,7 +65,7 @@
     },
     {
       "id": 8,
-      "imgSrc": "/static/media/img(17).431a6e533144b4afd731.jpg",
+      "imgSrc": "https://images.pexels.com/photos/698379/pexels-photo-698379.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Marrakech",
       "location": "Morocco",
       "grade": "EXOTIC ADVENTURE",
@@ -74,7 +74,7 @@
     },
     {
       "id": 9,
-      "imgSrc": "/static/media/img(17).431a6e533144b4afd731.jpg",
+      "imgSrc": "https://images.pexels.com/photos/458983/pexels-photo-458983.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Queenstown",
       "location": "New Zealand",
       "grade": "THRILLING ESCAPE",
@@ -83,7 +83,7 @@
     },
     {
       "id": 10,
-      "imgSrc": "/static/media/img(17).431a6e533144b4afd731.jpg",
+      "imgSrc": "https://images.pexels.com/photos/418626/pexels-photo-418626.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Grand Canyon",
       "location": "Arizona, USA",
       "grade": "NATURAL WONDER",
@@ -92,7 +92,7 @@
     },
     {
       "id": 11,
-      "imgSrc": "/static/media/img(17).431a6e533144b4afd731.jpg",
+      "imgSrc": "https://images.pexels.com/photos/1645854/pexels-photo-1645854.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Santorini",
       "location": "Greece",
       "grade": "ROMANTIC GETAWAY",
@@ -101,7 +101,7 @@
     },
     {
       "id": 12,
-      "imgSrc": "/static/media/img(17).431a6e533144b4afd731.jpg",
+      "imgSrc": "https://images.pexels.com/photos/3396854/pexels-photo-3396854.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Machu Picchu",
       "location": "Peru",
       "grade": "HISTORICAL WONDERS",
@@ -110,7 +110,7 @@
     },
     {
       "id": 13,
-      "imgSrc": "/static/media/img(17).431a6e533144b4afd731.jpg",
+      "imgSrc": "https://images.pexels.com/photos/2336927/pexels-photo-2336927.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Kyoto",
       "location": "Japan",
       "grade": "CULTURAL ENCHANTMENT",
@@ -119,7 +119,7 @@
     },
     {
       "id": 14,
-      "imgSrc": "/static/media/img(17).431a6e533144b4afd731.jpg",
+      "imgSrc": "https://images.pexels.com/photos/633198/pexels-photo-633198.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Victoria Falls",
       "location": "Zambia/Zimbabwe",
       "grade": "NATURAL WONDER",
@@ -128,7 +128,7 @@
     },
     {
       "id": 15,
-      "imgSrc": "/static/media/img(17).431a6e533144b4afd731.jpg",
+      "imgSrc": "https://images.pexels.com/photos/1748531/pexels-photo-1748531.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Banff National Park",
       "location": "Canada",
       "grade": "SCENIC BEAUTY",
@@ -137,7 +137,7 @@
     },
     {
       "id": 16,
-      "imgSrc": "/static/media/img(17).431a6e533144b4afd731.jpg",
+      "imgSrc": "https://images.pexels.com/photos/937781/pexels-photo-937781.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Great Barrier Reef",
       "location": "Australia",
       "grade": "UNDERWATER PARADISE",
@@ -146,7 +146,7 @@
     },
     {
       "id": 17,
-      "imgSrc": "/static/media/img(17).431a6e533144b4afd731.jpg",
+      "imgSrc": "https://images.pexels.com/photos/2438/nature-forest-waves-trees.jpg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Serengeti National Park",
       "location": "Tanzania",
       "grade": "WILDLIFE SAFARI",
@@ -155,7 +155,7 @@
     },
     {
       "id": 18,
-      "imgSrc": "/static/media/img(18).00574107d1698c677dfa.jpg",
+      "imgSrc": "https://images.pexels.com/photos/2336921/pexels-photo-2336921.jpeg?auto=compress&cs=tinysrgb&w=600",
       "destTitle": "Barcelona",
       "location": "Spain",
       "grade": "CULTURAL DELIGHT",
