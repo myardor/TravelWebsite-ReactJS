@@ -99,7 +99,7 @@ const Slider = () => {
   useEffect(() => {
     const getHotelData = async () => {
       const res = await axios({
-        url: "http://localhost:3004/hotelData",
+        url: "http://47.95.39.183:3005/hotelData",
       })
       setHotelData(res.data)
       // console.log(res.data)
