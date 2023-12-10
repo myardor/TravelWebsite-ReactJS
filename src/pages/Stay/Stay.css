@@ -207,7 +207,7 @@
     position: absolute;
     content: "";
     background: var(--SecondaryColor);
-    width: 145px;
+    width: 120px;
     height: 5px;
     right: 0;
     bottom: 5px;

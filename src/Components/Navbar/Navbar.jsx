@@ -58,12 +58,12 @@ const Navbar = () => {
                 Flight
               </a>
             </li>
-            <li className='navItem' onClick={() => navigate("/carRent")}>
+            {/* <li className='navItem' onClick={() => navigate("/carRent")}>
               <a href='#' className='navLink flex'>
                 <FaCar className='icon' />
                 Car rentals
               </a>
-            </li>
+            </li> */}
 
             <li className='navItem' onClick={() => navigate("/attraction")}>
               <a href='#' className='navLink flex'>

@@ -10,7 +10,11 @@ import { TbApps } from "react-icons/tb"
 import Aos from "aos"
 import "aos/dist/aos.css"
 
-const Home = () => {
+const Home = ({
+  smallText = "Our Packages",
+  homeTitle = "Search your Holiday",
+  video = homeVideo,
+}) => {
   // 动画效果
   useEffect(() => {
     Aos.init({ duration: 1000 })
@@ -19,12 +23,12 @@ const Home = () => {
   return (
     <section className='home'>
       {/* <div className='overlay'></div> */}
-      <video src={homeVideo} type='video/mp4' autoPlay muted loop></video>
+      <video src={video} type='video/mp4' autoPlay muted loop></video>
 
       <div className='homeContent container'>
         <div className='textDiv' data-aos='fade-up'>
-          <span className='smallText'>Our Packages</span>
-          <h1 className='homeTitle'>Search your Holiday</h1>
+          <span className='smallText'>{smallText}</span>
+          <h1 className='homeTitle'>{homeTitle}</h1>
         </div>
 
         {/* 卡片表单 */}

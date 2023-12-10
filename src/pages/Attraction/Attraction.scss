@@ -1,0 +1,79 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.attraction {
+  .container {
+    width: 80% !important;
+    margin: auto !important;
+  }
+
+  .section {
+    padding: 1rem 0 4rem;
+  }
+
+  .getCover {
+    border-top: 1px solid #000;
+    .title {
+      color: var(--textColor);
+      font-weight: 600;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+      gap: 1.5rem;
+
+      li {
+        width: 33%;
+        display: flex;
+
+        .icon {
+          margin-right: 0.6rem;
+          color: #32cd32;
+        }
+
+        .coverText {
+          h4 {
+            font-weight: 600;
+          }
+
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+// media query================================>
+@media screen and (min-width: 500px) {
+  .attraction {
+    .home {
+      .homeContent {
+        .textDiv {
+          .homeTitle {
+            &::after {
+              width: 230px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

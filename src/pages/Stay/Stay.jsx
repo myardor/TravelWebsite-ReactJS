@@ -36,8 +36,10 @@ const Stay = () => {
 
         <div className='homeContent container'>
           <div className='textDiv' data-aos='fade-up'>
-            <span className='smallText'>Our Packages</span>
-            <h1 className='homeTitle'>Search your Holiday</h1>
+            <span className='smallText'>Find deals for any season</span>
+            <h1 className='homeTitle'>
+              From cozy bed & breakfasts to luxury hotels
+            </h1>
           </div>
 
           {/* 卡片表单 */}

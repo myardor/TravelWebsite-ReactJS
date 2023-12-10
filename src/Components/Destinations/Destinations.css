@@ -1,0 +1,69 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --cardHover: rgb(255, 255, 255);
+}
+
+.destinations .secTitle .title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  color: var(--textColor);
+  margin: 1rem 0 1.5rem;
+  z-index: 2;
+}
+.destinations .secTitle .title::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 5px;
+  width: 120px;
+  background: var(--SecondaryColor);
+  height: 5px;
+  z-index: -1;
+}
+.destinations .secContent {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.destinations .secContent .ContentItem {
+  position: relative;
+  cursor: pointer;
+}
+.destinations .secContent .ContentItem img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s ease;
+}
+.destinations .secContent .ContentItem img:hover {
+  scale: 1.05;
+}
+.destinations .secContent .ContentItem .itemText {
+  position: absolute;
+  left: 1rem;
+  bottom: 1.2rem;
+  color: var(--whiteColor);
+}
+.destinations .secContent .ContentItem .itemText h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.destinations .secContent .ContentItem .itemText span {
+  font-size: 13px;
+}/*# sourceMappingURL=Destinations.css.map */
