@@ -69,7 +69,7 @@ const Home = ({
         </div>
 
         {/* 底部图标栏 */}
-        <div data-aos='fade-up' className='homeFooterIcons flex'>
+        <div className='homeFooterIcons flex'>
           <div className='rightIcons'>
             <FiFacebook className='icon' />
             <FaTwitter className='icon' />

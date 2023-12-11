@@ -66,7 +66,7 @@ const Stay = () => {
 
             {/* 客房数输入框 */}
             <div className='destinationInput'>
-              <label htmlFor='city'>Search your destination:</label>
+              <label htmlFor='city'>Select your housing information:</label>
               <div className='input flex' onClick={() => setActive(!active)}>
                 <input
                   type='text'
