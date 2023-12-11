@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react"
 import "./Stay.css"
-
 import stayVideo from "../../assets/stayVideo.mp4"
 
+// 导入动画库
+import Aos from "aos"
+import "aos/dist/aos.css"
+
+// 导入字体
 import { CiLocationOn } from "react-icons/ci"
 import { FiFacebook } from "react-icons/fi"
 import { FaTwitter, FaInstagram, FaSearch } from "react-icons/fa"
@@ -10,10 +14,10 @@ import { BsListTask } from "react-icons/bs"
 import { TbApps } from "react-icons/tb"
 import { IoIosArrowDown } from "react-icons/io"
 
-import Aos from "aos"
-import "aos/dist/aos.css"
+// 导入组件
 import Slider from "../../Components/Slider/Slider"
 import Footer from "../../Components/Footer/Footer"
+import Tabs from "../../Components/Tabs/Tabs"
 
 const Stay = () => {
   // 动画效果
@@ -160,6 +164,7 @@ const Stay = () => {
       {/* 房间轮播图 */}
       <Slider />
 
+      <Tabs />
       <Footer data-aos='fade-up' />
     </>
   )
