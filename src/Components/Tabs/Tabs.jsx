@@ -39,10 +39,6 @@ const Tabs = () => {
 
   useEffect(() => {
     const getRegionData = async () => {
-      //   const region = await axios({
-      //     url: "http://localhost:3002/regionData",
-      //   })
-      //   setRegionData(region.data)
       const url1 = "http://localhost:3002/regionData"
       const url2 = "http://localhost:3002/cityData"
       const url3 = "http://localhost:3002/interestPlaceData"

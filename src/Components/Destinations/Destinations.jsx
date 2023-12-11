@@ -19,7 +19,7 @@ const Destinations = () => {
       setData(res.data)
     }
     getAttrData()
-  })
+  }, [])
 
   return (
     <>
