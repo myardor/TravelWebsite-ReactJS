@@ -44,8 +44,13 @@
 
   .navItem {
     .navLink {
+      color: var(--textColor);
       .icon {
         font-size: 25px;
+      }
+
+      &:focus {
+        color: var(--PrimaryColor);
       }
     }
   }
@@ -86,7 +91,6 @@
           .navLink {
             display: flex;
             align-items: center;
-            color: var(--textColor);
             font-size: 0.9rem;
             font-weight: 600;
 
@@ -153,7 +157,7 @@
 
         .navItem {
           .navLink {
-            color: var(--textColor);
+            // color: var(--textColor);
             padding: 0 0.45rem;
             font-size: 0.9rem;
             font-weight: 500;

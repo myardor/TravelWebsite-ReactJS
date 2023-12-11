@@ -39,8 +39,14 @@
   color: var(--PrimaryColor);
   transform: translateY(5px);
 }
+.header .navItem .navLink {
+  color: var(--textColor);
+}
 .header .navItem .navLink .icon {
   font-size: 25px;
+}
+.header .navItem .navLink:focus {
+  color: var(--PrimaryColor);
 }
 @media screen and (max-width: 768px) {
   .header .navBar {
@@ -72,7 +78,6 @@
   .header .navBar .navLists .navItem .navLink {
     display: flex;
     align-items: center;
-    color: var(--textColor);
     font-size: 0.9rem;
     font-weight: 600;
   }
@@ -121,7 +126,6 @@
     flex-direction: row;
   }
   .header .navBar .navLists .navItem .navLink {
-    color: var(--textColor);
     padding: 0 0.45rem;
     font-size: 0.9rem;
     font-weight: 500;
