@@ -14,7 +14,7 @@ const Destinations = () => {
   useEffect(() => {
     const getAttrData = async () => {
       const res = await axios({
-        url: "http://localhost:3002/destinationData",
+        url: "http://47.95.39.183:3005/destinationData",
       })
       setData(res.data)
     }

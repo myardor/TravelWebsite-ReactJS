@@ -21,6 +21,10 @@
     width: 80% !important;
     margin: auto !important;
   }
+  .homeTitle {
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+  }
 
   .section {
     padding: 1rem 0 4rem;
@@ -35,6 +39,7 @@
 
     ul {
       display: flex;
+
       justify-content: space-between;
       margin-top: 1rem;
       gap: 1.5rem;
@@ -44,6 +49,7 @@
         display: flex;
 
         .icon {
+          font-size: 32px;
           margin-right: 0.6rem;
           color: #32cd32;
         }
@@ -62,17 +68,46 @@
   }
 }
 // media query================================>
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 900px) {
   .attraction {
     .home {
       .homeContent {
         .textDiv {
           .homeTitle {
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+
             &::after {
               width: 230px;
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .attraction {
+    .home {
+      .homeContent {
+        .textDiv {
+          .homeTitle {
+            width: 80%;
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+
+            &::after {
+              width: 0px;
+            }
+          }
+        }
+      }
+    }
+
+    .getCover {
+      ul {
+        flex-wrap: wrap;
       }
     }
   }

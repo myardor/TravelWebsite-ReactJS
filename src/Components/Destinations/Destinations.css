@@ -66,4 +66,10 @@
 }
 .destinations .secContent .ContentItem .itemText span {
   font-size: 13px;
+}
+
+@media screen and (max-width: 660px) {
+  .destinations .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=Destinations.css.map */

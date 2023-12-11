@@ -235,13 +235,12 @@
         .homeTitle {
           position: relative;
           font-size: 2.3rem;
-          width: max-content;
 
           &::after {
             position: absolute;
             content: "";
             background: var(--SecondaryColor);
-            width: 120px;
+
             height: 5px;
             right: 0;
             bottom: 5px;
@@ -273,6 +272,31 @@
     height: 95vh;
   }
 }
+
+@media screen and (min-width: 850px) {
+  .stay {
+    .homeTitle {
+      width: max-content;
+      &::after {
+        width: 120px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .stay {
+    .homeTitle {
+      width: 80%;
+      word-wrap: break-word;
+      text-overflow: ellipsis;
+      &::after {
+        width: 0px;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1240px) {
   .stay {
     height: 100vh;

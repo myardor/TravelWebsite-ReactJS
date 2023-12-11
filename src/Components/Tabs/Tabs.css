@@ -82,4 +82,28 @@
   .section {
     padding: 2rem 0 4rem;
   }
+}
+@media screen and (max-width: 1240px) {
+  .tabs .tab-content .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 730px) {
+  .tabs .tab-content .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 450px) {
+  .tabs .tabName .tab {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 6px 10px;
+  }
+  .tabs .tabItem {
+    height: 330px;
+    overflow: auto;
+  }
+  .tabs .tabItem .tab-content .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=Tabs.css.map */

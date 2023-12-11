@@ -20,6 +20,10 @@
   width: 80% !important;
   margin: auto !important;
 }
+.attraction .homeTitle {
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
 .attraction .section {
   padding: 1rem 0 4rem;
 }
@@ -41,6 +45,7 @@
   display: flex;
 }
 .attraction .getCover ul li .icon {
+  font-size: 32px;
   margin-right: 0.6rem;
   color: #32cd32;
 }
@@ -51,8 +56,25 @@
   font-size: 14px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 900px) {
+  .attraction .home .homeContent .textDiv .homeTitle {
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+  }
   .attraction .home .homeContent .textDiv .homeTitle::after {
     width: 230px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .attraction .home .homeContent .textDiv .homeTitle {
+    width: 80%;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+  }
+  .attraction .home .homeContent .textDiv .homeTitle::after {
+    width: 0px;
+  }
+  .attraction .getCover ul {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=Attraction.css.map */

@@ -2,31 +2,6 @@ import React, { useEffect, useState } from "react"
 import "./Tabs.css"
 import axios from "axios"
 
-const additionalCitiesData = [
-  { name: "Wembley Stadium", properties: "14,542 properties" },
-  { name: "Universal Studios Orlando", properties: "3,687 properties" },
-  { name: "Eiffel Tower", properties: "7,595 properties" },
-  { name: "Disneyland", properties: "247 properties" },
-  { name: "Guadalupe River Tubing", properties: "327 properties" },
-  { name: "Times Square", properties: "1,386 properties" },
-  { name: "Disneyland Paris", properties: "7,595 properties" },
-  { name: "Comal River Tubing", properties: "327 properties" },
-  { name: "Heathrow Terminal 2", properties: "Data not available" }, // Example for missing data
-  { name: "Burj Al Arab Tower", properties: "4,310 properties" },
-  { name: "Ocean City Boardwalk", properties: "765 properties" },
-  { name: "River Walk", properties: "671 properties" },
-  { name: "Al Maha Wildlife Reserve", properties: "1 property" },
-  { name: "Kalahari Waterpark", properties: "43 properties" },
-  { name: "Heathrow Terminal 5", properties: "63 properties" },
-  { name: "O2 Arena", properties: "14,542 properties" },
-  { name: "State Park", properties: "21 properties" },
-  { name: "Niagara Falls State Park", properties: "75 properties" },
-  { name: "The Shard", properties: "14,542 properties" },
-  { name: "Portmeirion", properties: "9 properties" },
-]
-
-console.log(JSON.stringify(additionalCitiesData))
-
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1")
   const [regionData, setRegionData] = useState([])
@@ -39,9 +14,9 @@ const Tabs = () => {
 
   useEffect(() => {
     const getRegionData = async () => {
-      const url1 = "http://localhost:3002/regionData"
-      const url2 = "http://localhost:3002/cityData"
-      const url3 = "http://localhost:3002/interestPlaceData"
+      const url1 = "http://47.95.39.183:3005/regionData"
+      const url2 = "http://47.95.39.183:3005/cityData"
+      const url3 = "http://47.95.39.183:3005/interestPlaceData"
 
       //   一次请求多份数据
       await axios

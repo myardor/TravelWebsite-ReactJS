@@ -200,14 +200,11 @@
   .stay .homeContent .textDiv .homeTitle {
     position: relative;
     font-size: 2.3rem;
-    width: -moz-max-content;
-    width: max-content;
   }
   .stay .homeContent .textDiv .homeTitle::after {
     position: absolute;
     content: "";
     background: var(--SecondaryColor);
-    width: 120px;
     height: 5px;
     right: 0;
     bottom: 5px;
@@ -226,6 +223,25 @@
 @media screen and (min-width: 940px) {
   .stay {
     height: 95vh;
+  }
+}
+@media screen and (min-width: 850px) {
+  .stay .homeTitle {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .stay .homeTitle::after {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .stay .homeTitle {
+    width: 80%;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+  }
+  .stay .homeTitle::after {
+    width: 0px;
   }
 }
 @media screen and (min-width: 1240px) {

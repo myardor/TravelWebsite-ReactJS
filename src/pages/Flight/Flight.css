@@ -17,7 +17,7 @@
   --cardBG: rgb(225, 225, 235);
 }
 
-.home {
+.flight .home {
   position: relative;
   width: 100%;
   display: flex;
@@ -25,7 +25,7 @@
   align-items: center;
   margin: auto;
 }
-.home video {
+.flight .home video {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -34,7 +34,7 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.home .homeContent {
+.flight .home .homeContent {
   width: 100%;
   height: -moz-max-content;
   height: max-content;
@@ -47,41 +47,43 @@
   color: var(--whiteColor);
   z-index: 2;
 }
-.home .homeContent .textDiv {
+.flight .home .homeContent .textDiv {
   padding: 2rem 0;
 }
-.home .homeContent .textDiv .smallText {
+.flight .home .homeContent .textDiv .smallText {
   font-size: 13px;
   text-transform: uppercase;
 }
-.home .homeContent .textDiv .homeTitle {
+.flight .home .homeContent .textDiv .homeTitle {
   position: relative;
   font-size: 1.8rem;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
 }
-.home .homeContent .cardDiv {
+.flight .home .homeContent .cardDiv {
   position: relative;
   padding: 2rem 1rem;
   background: var(--whiteColor);
   border-radius: 10px;
   gap: 1rem;
 }
-.home .homeContent .cardDiv label {
+.flight .home .homeContent .cardDiv label {
   display: block;
   color: var(--textColor);
   padding-bottom: 10px;
   font-size: 13px;
   font-weight: 500;
 }
-.home .homeContent .cardDiv .label_total {
+.flight .home .homeContent .cardDiv .label_total {
   justify-content: space-between;
   align-items: center;
 }
-.home .homeContent .cardDiv .label_total .total {
+.flight .home .homeContent .cardDiv .label_total .total {
   color: var(--textColor);
   font-size: 18px;
   padding-bottom: 10px;
 }
-.home .homeContent .cardDiv .input {
+.flight .home .homeContent .cardDiv .input {
   position: relative;
   height: 40px;
   padding: 0 1rem;
@@ -89,7 +91,7 @@
   border-radius: 3rem;
   /*横条样式*/
 }
-.home .homeContent .cardDiv .input .stayInput {
+.flight .home .homeContent .cardDiv .input .stayInput {
   position: absolute;
   padding: 1rem;
   top: 2.5rem;
@@ -99,26 +101,26 @@
   background-color: var(--cardBG);
   border-radius: 10px;
 }
-.home .homeContent .cardDiv .input .stayInput .inputItem {
+.flight .home .homeContent .cardDiv .input .stayInput .inputItem {
   justify-content: space-between;
 }
-.home .homeContent .cardDiv .input .stayInput .inputItem .text {
+.flight .home .homeContent .cardDiv .input .stayInput .inputItem .text {
   color: var(--blackColor);
 }
-.home .homeContent .cardDiv .input .stayInput .inputItem .count {
+.flight .home .homeContent .cardDiv .input .stayInput .inputItem .count {
   border: 1px solid var(--PrimaryColor);
   font-size: 1.1rem;
   color: var(--blackColor);
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
 }
-.home .homeContent .cardDiv .input .stayInput .inputItem .count button {
+.flight .home .homeContent .cardDiv .input .stayInput .inputItem .count button {
   border: none;
   background-color: var(--cardBG);
   font-size: 1.25rem;
   width: 1.25rem;
 }
-.home .homeContent .cardDiv .input input {
+.flight .home .homeContent .cardDiv .input input {
   background: none;
   border: none;
   outline: none;
@@ -126,21 +128,21 @@
   font-size: 13px;
   font-weight: 500;
 }
-.home .homeContent .cardDiv .input input::-moz-placeholder {
+.flight .home .homeContent .cardDiv .input input::-moz-placeholder {
   font-size: 13px;
 }
-.home .homeContent .cardDiv .input input::placeholder {
+.flight .home .homeContent .cardDiv .input input::placeholder {
   font-size: 13px;
 }
-.home .homeContent .cardDiv .input .icon {
+.flight .home .homeContent .cardDiv .input .icon {
   font-size: 18px;
   color: var(--PrimaryColor) !important;
   margin-left: 10px;
 }
-.home .homeContent .cardDiv .input input[type=range] {
+.flight .home .homeContent .cardDiv .input input[type=range] {
   background: blue;
 }
-.home .homeContent .cardDiv .searchOptions {
+.flight .home .homeContent .cardDiv .searchOptions {
   position: absolute;
   background: var(--gradientColor);
   width: -moz-max-content;
@@ -155,26 +157,26 @@
   justify-content: center;
   cursor: pointer;
 }
-.home .homeContent .cardDiv .searchOptions:hover {
+.flight .home .homeContent .cardDiv .searchOptions:hover {
   background: var(--PrimaryColor);
 }
-.home .homeContent .cardDiv .searchOptions .icon {
+.flight .home .homeContent .cardDiv .searchOptions .icon {
   font-size: 18px;
 }
-.home .homeContent .cardDiv .searchOptions span {
+.flight .home .homeContent .cardDiv .searchOptions span {
   font-size: 13px;
 }
-.home .homeContent .homeFooterIcons {
+.flight .home .homeContent .homeFooterIcons {
   width: 100%;
   justify-content: space-between;
 }
-.home .homeContent .homeFooterIcons .icon {
+.flight .home .homeContent .homeFooterIcons .icon {
   font-size: 20px;
   margin: 0 5px;
   color: var(--whiteColor);
   font-weight: 600;
 }
-.home .homeContent .homeFooterIcons .icon:hover {
+.flight .home .homeContent .homeFooterIcons .icon:hover {
   color: var(--PrimaryColor);
 }
 
@@ -187,6 +189,8 @@
     font-size: 2.3rem;
     width: -moz-max-content;
     width: max-content;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
   }
   .home .homeContent .textDiv .homeTitle::after {
     position: absolute;
