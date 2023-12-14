@@ -8,7 +8,6 @@ import { TbGridDots } from "react-icons/tb"
 import { MdHotel } from "react-icons/md"
 import { MdFlight } from "react-icons/md"
 import { MdHome } from "react-icons/md"
-import { FaCar } from "react-icons/fa"
 import { LuPalmtree } from "react-icons/lu"
 
 const Navbar = () => {
@@ -37,7 +36,7 @@ const Navbar = () => {
 
         <div className={active}>
           {/* 导航栏 */}
-          <ul className='navLists flex'>
+          <ul className='navLists flex' onClick={toggleNavbar}>
             {/* home */}
             <li className='navItem' onClick={() => navigate("/")}>
               <a href='#' className='navLink flex'>
@@ -64,34 +63,6 @@ const Navbar = () => {
                 Attractions
               </a>
             </li>
-
-            {/* <li className='navItem' onClick={() => navigate("/carRent")}>
-              <a href='#' className='navLink flex'>
-                <FaCar className='icon' />
-                Car rentals
-              </a>
-            </li> */}
-
-            {/* <li className='navItem'>
-              <a href='#' className='navLink flex'>
-                <MdHotel className='icon' />
-                Flight+Hotel
-              </a>
-            </li> */}
-
-            {/* <li className='navItem'>
-              <a href='#' className='navLink flex'>
-                <FaTaxi className='icon' />
-                Airport taxis
-              </a>
-            </li> */}
-
-            {/* 
-            <li className='navItem'>
-              <a href='#' className='navLink'>
-                Contact
-              </a>
-            </li> */}
 
             {localStorage.getItem("accountName") ? (
               <a style={{ color: "blue" }}>
