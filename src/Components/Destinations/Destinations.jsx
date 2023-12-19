@@ -3,7 +3,7 @@ import "./Destinations.css"
 
 import Aos from "aos"
 import "aos/dist/aos.css"
-import axios from "axios"
+import { getAttrDataAPI } from "../../apis"
 
 const Destinations = () => {
   const [Data, setData] = useState([])
@@ -13,9 +13,7 @@ const Destinations = () => {
 
   useEffect(() => {
     const getAttrData = async () => {
-      const res = await axios({
-        url: "http://47.95.39.183:3005/destinationData",
-      })
+      const res = await getAttrDataAPI()
       setData(res.data)
     }
     getAttrData()

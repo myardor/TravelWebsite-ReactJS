@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import "./Tabs.css"
 import axios from "axios"
+import { getRegionDataAPI } from "../../apis"
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1")
@@ -19,20 +20,11 @@ const Tabs = () => {
       const url3 = "http://47.95.39.183:3005/interestPlaceData"
 
       //   一次请求多份数据
-      await axios
-        .all([axios.get(url1), axios.get(url2), axios.get(url3)])
-        .then(
-          axios.spread((res1, res2, res3) => {
-            // 所有请求完成后的处理
-            setRegionData(res1.data)
-            setCityData(res2.data)
-            setPlaceData(res3.data)
-          })
-        )
-        .catch(error => {
-          // 处理错误
-          console.error("Error:", error)
-        })
+      const [res1, res2, res3] = await getRegionDataAPI()
+
+      setRegionData(res1.data)
+      setCityData(res2.data)
+      setPlaceData(res3.data)
     }
     getRegionData()
   }, [])

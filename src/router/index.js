@@ -1,13 +1,7 @@
 import { createBrowserRouter } from "react-router-dom"
 import { Suspense, lazy } from "react"
 
-// import Login from "../pages/Login/Login"
-// import Layout from "../pages/Layout"
-// import Stay from "../pages/Stay/Stay"
-// import Index from "../pages/Index"
-// import Flight from "../pages/Flight/Flight"
-// import Attraction from "../pages/Attraction/Attraction"
-
+// 懒加载
 const Index = lazy(() => import("../pages/Index"))
 const Login = lazy(() => import("../pages/Login/Login"))
 const Layout = lazy(() => import("../pages/Layout"))

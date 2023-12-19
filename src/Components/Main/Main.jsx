@@ -9,6 +9,7 @@ import _ from "lodash"
 // import icons
 import { FaLocationDot } from "react-icons/fa6"
 import { LuClipboardPaste } from "react-icons/lu"
+import { getMainDataAPI } from "../../apis"
 
 const showItemsCount = 6
 
@@ -19,9 +20,7 @@ const Main = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const res = await axios({
-        url: "http://47.95.39.183:3005/Data",
-      })
+      const res = await getMainDataAPI()
       setData(res.data)
       setCurrentData(res.data.slice(0, showItemsCount))
     }
