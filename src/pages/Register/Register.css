@@ -1,0 +1,49 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+html {
+  background-image: url("../../assets/img(5).jpg");
+  background-size: cover;
+}
+
+#root {
+  position: relative;
+}
+#root .register {
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+}
+#root .register .RegisterTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: var(--whiteColor);
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+#root .register .formItems {
+  padding: 1rem;
+  border: 3px solid var(--whiteColor);
+  border-radius: 20px;
+}
+#root .register .formItems label {
+  color: var(--whiteColor);
+}/*# sourceMappingURL=Register.css.map */

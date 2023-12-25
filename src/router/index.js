@@ -2,12 +2,13 @@ import { createBrowserRouter } from "react-router-dom"
 import { Suspense, lazy } from "react"
 
 // 懒加载
-const Index = lazy(() => import("../pages/Index"))
+const Index = lazy(() => import("../pages/Index/index"))
 const Login = lazy(() => import("../pages/Login/Login"))
-const Layout = lazy(() => import("../pages/Layout"))
+const Layout = lazy(() => import("../pages/Layout/index"))
 const Stay = lazy(() => import("../pages/Stay/Stay"))
 const Flight = lazy(() => import("../pages/Flight/Flight"))
 const Attraction = lazy(() => import("../pages/Attraction/Attraction"))
+const Register = lazy(() => import("../pages/Register/Register"))
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,14 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={"加载中"}>
         <Login />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/register",
+    element: (
+      <Suspense fallback={"加载中"}>
+        <Register />
       </Suspense>
     ),
   },

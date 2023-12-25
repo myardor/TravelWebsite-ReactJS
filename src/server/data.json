@@ -326,5 +326,6 @@
     { "name": "Niagara Falls State Park", "properties": "75 properties" },
     { "name": "The Shard", "properties": "14,542 properties" },
     { "name": "Portmeirion", "properties": "9 properties" }
-  ]
+  ],
+  "usrInfo": []
 }

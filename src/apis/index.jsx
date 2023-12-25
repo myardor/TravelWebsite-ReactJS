@@ -1,31 +1,36 @@
 import axios from "axios"
 
+// 设置前置url
+// axios.defaults.baseURL = "http://47.95.39.183:3005"
+axios.defaults.baseURL = "http://localhost:3005"
+
 // Destinations
+
 const getAttrDataAPI = () => {
   return axios({
-    url: "http://47.95.39.183:3005/destinationData",
+    url: "/destinationData",
   })
 }
 
 // Main
 const getMainDataAPI = () => {
   return axios({
-    url: "http://47.95.39.183:3005/Data",
+    url: "/Data",
   })
 }
 
 // Slider
 const getHotelDataAPI = () => {
   return axios({
-    url: "http://47.95.39.183:3005/hotelData",
+    url: "/hotelData",
   })
 }
 
 // Tabs
 const getRegionDataAPI = () => {
-  const url1 = "http://47.95.39.183:3005/regionData"
-  const url2 = "http://47.95.39.183:3005/cityData"
-  const url3 = "http://47.95.39.183:3005/interestPlaceData"
+  const url1 = "/regionData"
+  const url2 = "/cityData"
+  const url3 = "/interestPlaceData"
 
   //   一次请求多份数据
   return axios.all([axios.get(url1), axios.get(url2), axios.get(url3)])
