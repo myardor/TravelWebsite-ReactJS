@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --PrimaryColor: hsl(199, 100%, 33%);
   --SecondaryColor: hsl(187, 85%, 43%);
@@ -16,22 +17,26 @@
   --cardBG: rgb(225, 225, 235);
 }
 
+body,
 html {
-  background-image: url("../../assets/img(5).jpg");
-  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* 可选：设置默认字体 */
 }
 
-#root {
-  position: relative;
-}
 #root .register {
+  background-image: url("../../assets/img(5).jpg");
+  background-size: cover;
+  height: 100vh;
+}
+#root .registerForm {
   position: absolute;
   top: 10rem;
   left: 50%;
   transform: translateX(-50%);
   width: 400px;
 }
-#root .register .RegisterTitle {
+#root .registerForm .RegisterTitle {
   display: flex;
   justify-content: center;
   font-size: 30px;
@@ -39,11 +44,11 @@ html {
   font-weight: 600;
   padding-bottom: 1rem;
 }
-#root .register .formItems {
+#root .registerForm .formItems {
   padding: 1rem;
   border: 3px solid var(--whiteColor);
   border-radius: 20px;
 }
-#root .register .formItems label {
+#root .registerForm .formItems label {
   color: var(--whiteColor);
 }/*# sourceMappingURL=Register.css.map */

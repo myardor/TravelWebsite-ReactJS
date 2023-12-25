@@ -485,5 +485,54 @@
       "properties": "9 properties"
     }
   ],
-  "usrInfo": []
+  "usrInfo": [
+    {
+      "prefix": "86",
+      "phone": "11",
+      "password": "11",
+      "confirm": "11",
+      "agreement": true,
+      "id": 1
+    },
+    {
+      "prefix": "86",
+      "phone": "1",
+      "password": "1",
+      "confirm": "1",
+      "agreement": true,
+      "id": 2
+    },
+    {
+      "prefix": "86",
+      "phone": "1",
+      "password": "1",
+      "confirm": "1",
+      "agreement": true,
+      "id": 3
+    },
+    {
+      "prefix": "86",
+      "phone": "1",
+      "password": "1",
+      "confirm": "1",
+      "agreement": true,
+      "id": 4
+    },
+    {
+      "prefix": "86",
+      "phone": "1",
+      "password": "1",
+      "confirm": "1",
+      "agreement": true,
+      "id": 5
+    },
+    {
+      "prefix": "86",
+      "phone": "1",
+      "password": "1",
+      "confirm": "1",
+      "agreement": true,
+      "id": 6
+    }
+  ]
 }

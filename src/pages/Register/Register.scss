@@ -16,15 +16,20 @@
   --cardBG: rgb(225, 225, 235);
 }
 
+body,
 html {
-  background-image: url("../../assets/img\(5\).jpg");
-  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* 可选：设置默认字体 */
 }
-
 #root {
-  position: relative;
-
+  //   position: relative;
   .register {
+    background-image: url("../../assets/img\(5\).jpg");
+    background-size: cover;
+    height: 100vh;
+  }
+  .registerForm {
     position: absolute;
     top: 10rem;
     left: 50%;
