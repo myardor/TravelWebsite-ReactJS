@@ -4,6 +4,18 @@ import axios from "axios"
 // axios.defaults.baseURL = "http://47.95.39.183:3005"
 axios.defaults.baseURL = "http://localhost:3005"
 
+// verifyUsrInfo
+const verifyUsrInfo = async username => {
+  await axios({
+    url: `/usrInfo`,
+    params: {
+      phone: username,
+    },
+  }).then(res => {
+    // console.log(res.data)
+    return res.data[0]
+  })
+}
 // setUsrInfo
 const setUsrInfo = data => {
   return axios({
@@ -51,4 +63,5 @@ export {
   getHotelDataAPI,
   getRegionDataAPI,
   setUsrInfo,
+  verifyUsrInfo,
 }

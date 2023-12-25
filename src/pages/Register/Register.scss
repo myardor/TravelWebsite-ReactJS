@@ -55,6 +55,10 @@ html {
       label {
         color: var(--whiteColor);
       }
+
+      .ant-btn {
+        background-color: var(--SecondaryColor);
+      }
     }
   }
 }

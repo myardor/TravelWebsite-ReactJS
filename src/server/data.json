@@ -533,6 +533,22 @@
       "confirm": "1",
       "agreement": true,
       "id": 6
+    },
+    {
+      "prefix": "86",
+      "phone": "111",
+      "password": "111",
+      "confirm": "111",
+      "agreement": true,
+      "id": 7
+    },
+    {
+      "prefix": "86",
+      "phone": "123",
+      "password": "123",
+      "confirm": "123",
+      "agreement": true,
+      "id": 8
     }
   ]
 }

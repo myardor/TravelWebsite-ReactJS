@@ -51,4 +51,7 @@ html {
 }
 #root .registerForm .formItems label {
   color: var(--whiteColor);
+}
+#root .registerForm .formItems .ant-btn {
+  background-color: var(--SecondaryColor);
 }/*# sourceMappingURL=Register.css.map */
