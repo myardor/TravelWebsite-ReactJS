@@ -235,27 +235,83 @@
       "itemAssess": "Great·289 views"
     }
   ],
-
   "regionData": [
-    { "name": "Hawaii", "properties": "5,516 properties" },
-    { "name": "Texel", "properties": "410 properties" },
-    { "name": "Guernsey", "properties": "61 properties" },
-    { "name": "Uttar Pradesh", "properties": "4,378 properties" },
-    { "name": "Cornwall", "properties": "5,276 properties" },
-    { "name": "Phuket Province", "properties": "5,498 properties" },
-    { "name": "Bali", "properties": "12,681 properties" },
-    { "name": "Lake District", "properties": "2,404 properties" },
-    { "name": "Bora Bora", "properties": "59 properties" },
-    { "name": "Bihar", "properties": "761 properties" },
-    { "name": "Zanzibar", "properties": "834 properties" },
-    { "name": "Isle of Wight", "properties": "934 properties" },
-    { "name": "Ras Al Khaimah", "properties": "113 properties" },
-    { "name": "Santorini", "properties": "1,763 properties" },
-    { "name": "Tenerife", "properties": "9,602 properties" },
-    { "name": "England", "properties": "73,977 properties" },
-    { "name": "Jersey", "properties": "89 properties" },
-    { "name": "Mykonos", "properties": "1,452 properties" },
-    { "name": "Ibiza", "properties": "1,640 properties" }
+    {
+      "name": "Hawaii",
+      "properties": "5,516 properties"
+    },
+    {
+      "name": "Texel",
+      "properties": "410 properties"
+    },
+    {
+      "name": "Guernsey",
+      "properties": "61 properties"
+    },
+    {
+      "name": "Uttar Pradesh",
+      "properties": "4,378 properties"
+    },
+    {
+      "name": "Cornwall",
+      "properties": "5,276 properties"
+    },
+    {
+      "name": "Phuket Province",
+      "properties": "5,498 properties"
+    },
+    {
+      "name": "Bali",
+      "properties": "12,681 properties"
+    },
+    {
+      "name": "Lake District",
+      "properties": "2,404 properties"
+    },
+    {
+      "name": "Bora Bora",
+      "properties": "59 properties"
+    },
+    {
+      "name": "Bihar",
+      "properties": "761 properties"
+    },
+    {
+      "name": "Zanzibar",
+      "properties": "834 properties"
+    },
+    {
+      "name": "Isle of Wight",
+      "properties": "934 properties"
+    },
+    {
+      "name": "Ras Al Khaimah",
+      "properties": "113 properties"
+    },
+    {
+      "name": "Santorini",
+      "properties": "1,763 properties"
+    },
+    {
+      "name": "Tenerife",
+      "properties": "9,602 properties"
+    },
+    {
+      "name": "England",
+      "properties": "73,977 properties"
+    },
+    {
+      "name": "Jersey",
+      "properties": "89 properties"
+    },
+    {
+      "name": "Mykonos",
+      "properties": "1,452 properties"
+    },
+    {
+      "name": "Ibiza",
+      "properties": "1,640 properties"
+    }
   ],
   "destinationData": [
     {
@@ -290,42 +346,144 @@
     }
   ],
   "cityData": [
-    { "name": "Barcelona", "properties": "11,567 hotels" },
-    { "name": "Singapore", "properties": "14,239 hotels" },
-    { "name": "Mumbai", "properties": "8,765 hotels" },
-    { "name": "Cairo", "properties": "6,432 hotels" },
-    { "name": "Seoul", "properties": "10,876 hotels" },
-    { "name": "Mexico City", "properties": "13,245 hotels" },
-    { "name": "Bangkok", "properties": "19,432 hotels" },
-    { "name": "Vienna", "properties": "9,876 hotels" },
-    { "name": "Cape Town", "properties": "7,543 hotels" },
-    { "name": "Moscow", "properties": "15,678 hotels" },
-    { "name": "Madrid", "properties": "12,345 hotels" },
-    { "name": "Osaka", "properties": "10,123 hotels" },
-    { "name": "Vancouver", "properties": "8,987 hotels" },
-    { "name": "Prague", "properties": "11,876 hotels" }
+    {
+      "name": "Barcelona",
+      "properties": "11,567 hotels"
+    },
+    {
+      "name": "Singapore",
+      "properties": "14,239 hotels"
+    },
+    {
+      "name": "Mumbai",
+      "properties": "8,765 hotels"
+    },
+    {
+      "name": "Cairo",
+      "properties": "6,432 hotels"
+    },
+    {
+      "name": "Seoul",
+      "properties": "10,876 hotels"
+    },
+    {
+      "name": "Mexico City",
+      "properties": "13,245 hotels"
+    },
+    {
+      "name": "Bangkok",
+      "properties": "19,432 hotels"
+    },
+    {
+      "name": "Vienna",
+      "properties": "9,876 hotels"
+    },
+    {
+      "name": "Cape Town",
+      "properties": "7,543 hotels"
+    },
+    {
+      "name": "Moscow",
+      "properties": "15,678 hotels"
+    },
+    {
+      "name": "Madrid",
+      "properties": "12,345 hotels"
+    },
+    {
+      "name": "Osaka",
+      "properties": "10,123 hotels"
+    },
+    {
+      "name": "Vancouver",
+      "properties": "8,987 hotels"
+    },
+    {
+      "name": "Prague",
+      "properties": "11,876 hotels"
+    }
   ],
   "interestPlaceData": [
-    { "name": "Wembley Stadium", "properties": "14,542 properties" },
-    { "name": "Universal Studios Orlando", "properties": "3,687 properties" },
-    { "name": "Eiffel Tower", "properties": "7,595 properties" },
-    { "name": "Disneyland", "properties": "247 properties" },
-    { "name": "Guadalupe River Tubing", "properties": "327 properties" },
-    { "name": "Times Square", "properties": "1,386 properties" },
-    { "name": "Disneyland Paris", "properties": "7,595 properties" },
-    { "name": "Comal River Tubing", "properties": "327 properties" },
-    { "name": "Heathrow Terminal 2", "properties": "Data not available" },
-    { "name": "Burj Al Arab Tower", "properties": "4,310 properties" },
-    { "name": "Ocean City Boardwalk", "properties": "765 properties" },
-    { "name": "River Walk", "properties": "671 properties" },
-    { "name": "Al Maha Wildlife Reserve", "properties": "1 property" },
-    { "name": "Kalahari Waterpark", "properties": "43 properties" },
-    { "name": "Heathrow Terminal 5", "properties": "63 properties" },
-    { "name": "O2 Arena", "properties": "14,542 properties" },
-    { "name": "State Park", "properties": "21 properties" },
-    { "name": "Niagara Falls State Park", "properties": "75 properties" },
-    { "name": "The Shard", "properties": "14,542 properties" },
-    { "name": "Portmeirion", "properties": "9 properties" }
+    {
+      "name": "Wembley Stadium",
+      "properties": "14,542 properties"
+    },
+    {
+      "name": "Universal Studios Orlando",
+      "properties": "3,687 properties"
+    },
+    {
+      "name": "Eiffel Tower",
+      "properties": "7,595 properties"
+    },
+    {
+      "name": "Disneyland",
+      "properties": "247 properties"
+    },
+    {
+      "name": "Guadalupe River Tubing",
+      "properties": "327 properties"
+    },
+    {
+      "name": "Times Square",
+      "properties": "1,386 properties"
+    },
+    {
+      "name": "Disneyland Paris",
+      "properties": "7,595 properties"
+    },
+    {
+      "name": "Comal River Tubing",
+      "properties": "327 properties"
+    },
+    {
+      "name": "Heathrow Terminal 2",
+      "properties": "Data not available"
+    },
+    {
+      "name": "Burj Al Arab Tower",
+      "properties": "4,310 properties"
+    },
+    {
+      "name": "Ocean City Boardwalk",
+      "properties": "765 properties"
+    },
+    {
+      "name": "River Walk",
+      "properties": "671 properties"
+    },
+    {
+      "name": "Al Maha Wildlife Reserve",
+      "properties": "1 property"
+    },
+    {
+      "name": "Kalahari Waterpark",
+      "properties": "43 properties"
+    },
+    {
+      "name": "Heathrow Terminal 5",
+      "properties": "63 properties"
+    },
+    {
+      "name": "O2 Arena",
+      "properties": "14,542 properties"
+    },
+    {
+      "name": "State Park",
+      "properties": "21 properties"
+    },
+    {
+      "name": "Niagara Falls State Park",
+      "properties": "75 properties"
+    },
+    {
+      "name": "The Shard",
+      "properties": "14,542 properties"
+    },
+    {
+      "name": "Portmeirion",
+      "properties": "9 properties"
+    }
   ],
   "usrInfo": []
 }

@@ -4,8 +4,16 @@ import axios from "axios"
 // axios.defaults.baseURL = "http://47.95.39.183:3005"
 axios.defaults.baseURL = "http://localhost:3005"
 
-// Destinations
+// setUsrInfo
+const setUsrInfo = data => {
+  return axios({
+    url: "/usrInfo",
+    method: "post",
+    data,
+  })
+}
 
+// Destinations
 const getAttrDataAPI = () => {
   return axios({
     url: "/destinationData",
@@ -37,4 +45,10 @@ const getRegionDataAPI = () => {
 }
 
 // 导出
-export { getAttrDataAPI, getMainDataAPI, getHotelDataAPI, getRegionDataAPI }
+export {
+  getAttrDataAPI,
+  getMainDataAPI,
+  getHotelDataAPI,
+  getRegionDataAPI,
+  setUsrInfo,
+}
