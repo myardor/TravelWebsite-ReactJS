@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import "./navbar.css"
 import { useNavigate } from "react-router-dom"
 
-import { FaPlaneDeparture } from "react-icons/fa"
+import { FaPlaneDeparture, FaUser } from "react-icons/fa"
 import { IoIosCloseCircle } from "react-icons/io"
 import { TbGridDots } from "react-icons/tb"
 import { MdHotel } from "react-icons/md"
@@ -64,13 +64,18 @@ const Navbar = () => {
               </a>
             </li>
 
-            {localStorage.getItem("accountName") ? (
-              <a style={{ color: "blue" }}>
-                {localStorage.getItem("accountName")}
-              </a>
+            {localStorage.getItem("nickname") ? (
+              <button className='btn'>
+                <a href='#' className='nickname'>
+                  <i className='usrIcon'>
+                    <FaUser />
+                  </i>
+                  {localStorage.getItem("nickname")}
+                </a>
+              </button>
             ) : (
               <button className='btn' onClick={() => navigate("/login")}>
-                <a href='#'>SIGN UP</a>
+                <a href='#'>SIGN IN</a>
               </button>
             )}
           </ul>

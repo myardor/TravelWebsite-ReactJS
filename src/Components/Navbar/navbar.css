@@ -17,7 +17,6 @@
 }
 
 .header {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,6 +47,17 @@
 }
 .header .navItem .navLink:focus {
   color: var(--PrimaryColor);
+}
+.header .nickname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 14px;
+}
+.header .nickname .usrIcon {
+  font-size: 13px;
+  padding-right: 10px;
 }
 @media screen and (max-width: 768px) {
   .header .navBar {

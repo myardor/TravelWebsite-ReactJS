@@ -1,16 +1,26 @@
-import React from "react"
+import React, { useState } from "react"
 import { LockOutlined, UserOutlined } from "@ant-design/icons"
-import { Button, Checkbox, Form, Input } from "antd"
+import { Alert, Button, Checkbox, Form, Input } from "antd"
 import "./Login.css"
 import { useNavigate } from "react-router-dom"
-import { verifyUsrInfo } from "../../apis"
+import { verifyUsrInfoAPI } from "../../apis"
 
 const Login = () => {
+  const [alertShow, setAlertShow] = useState(false)
+  const [verifyInput, setVerifyInput] = useState({})
   const navigate = useNavigate()
-  const onFinish = values => {
-    const res = verifyUsrInfo(values.username)
-    // console.log("Received values of form: ", values)
-    console.log(res)
+  const onFinish = async values => {
+    const res = await verifyUsrInfoAPI(values)
+    console.log(values)
+    setVerifyInput(res)
+    setAlertShow(true)
+
+    setTimeout(() => {
+      setAlertShow(false)
+      if (res.type === "success") {
+        navigate("/")
+      }
+    }, 1200)
   }
   return (
     <>
@@ -82,6 +92,19 @@ const Login = () => {
                 </a>
               </Form.Item>
             </div>
+
+            {alertShow && (
+              <Alert
+                message={verifyInput.message}
+                type={verifyInput.type}
+                style={{
+                  marginTop: "20px",
+                  textAlign: "center",
+                  fontSize: "1rem",
+                  height: "50px",
+                }}
+              />
+            )}
           </Form>
         </div>
       </section>

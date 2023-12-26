@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Button, Checkbox, Form, Input, Select, Alert } from "antd"
 
 import "./Register.css"
-import { setUsrInfo } from "../../apis"
+import { setUsrInfoAPI } from "../../apis"
 import { useNavigate } from "react-router-dom"
 
 const { Option } = Select
@@ -42,12 +42,13 @@ const Register = () => {
   const [alertShow, setAlertShow] = useState(false)
   const [form] = Form.useForm()
   const onFinish = values => {
-    console.log("Received values of form: ", values)
+    console.log(values)
     setTimeout(() => {
+      localStorage.setItem("nickname", values.nickname)
       navigate("/")
     }, 1200)
     setAlertShow(true)
-    setUsrInfo(values)
+    setUsrInfoAPI(values)
   }
   const prefixSelector = (
     <Form.Item name='prefix' noStyle>
@@ -57,7 +58,6 @@ const Register = () => {
         }}
       >
         <Option value='86'>+86</Option>
-        <Option value='87'>+87</Option>
       </Select>
     </Form.Item>
   )
@@ -83,6 +83,22 @@ const Register = () => {
             </div>
 
             <div className='formItems'>
+              {/* nickname */}
+              <Form.Item
+                name='nickname'
+                label='Nickname'
+                tooltip='What do you want others to call you?'
+                rules={[
+                  {
+                    required: true,
+                    message: "Please input your nickname!",
+                    whitespace: true,
+                  },
+                ]}
+              >
+                <Input />
+              </Form.Item>
+
               {/* Phone Number */}
               <Form.Item
                 name='phone'

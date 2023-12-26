@@ -487,68 +487,31 @@
   ],
   "usrInfo": [
     {
+      "nickname": "Ardor",
       "prefix": "86",
-      "phone": "11",
-      "password": "11",
-      "confirm": "11",
+      "phone": "1314",
+      "password": "1314",
+      "confirm": "1314",
       "agreement": true,
       "id": 1
     },
     {
+      "nickname": "Ardor",
       "prefix": "86",
-      "phone": "1",
-      "password": "1",
-      "confirm": "1",
+      "phone": "1314",
+      "password": "1314",
+      "confirm": "1314",
       "agreement": true,
       "id": 2
     },
     {
-      "prefix": "86",
-      "phone": "1",
-      "password": "1",
-      "confirm": "1",
-      "agreement": true,
-      "id": 3
-    },
-    {
-      "prefix": "86",
-      "phone": "1",
-      "password": "1",
-      "confirm": "1",
-      "agreement": true,
-      "id": 4
-    },
-    {
-      "prefix": "86",
-      "phone": "1",
-      "password": "1",
-      "confirm": "1",
-      "agreement": true,
-      "id": 5
-    },
-    {
-      "prefix": "86",
-      "phone": "1",
-      "password": "1",
-      "confirm": "1",
-      "agreement": true,
-      "id": 6
-    },
-    {
-      "prefix": "86",
-      "phone": "111",
-      "password": "111",
-      "confirm": "111",
-      "agreement": true,
-      "id": 7
-    },
-    {
+      "nickname": "myardor",
       "prefix": "86",
       "phone": "123",
       "password": "123",
       "confirm": "123",
       "agreement": true,
-      "id": 8
+      "id": 3
     }
   ]
 }

@@ -38,7 +38,7 @@ html {
 #root {
   //   position: relative;
   .login {
-    background-image: url("../../assets/img\(3\).jpg");
+    background-image: url("../../assets/img\(16\).jpg");
     background-size: cover;
     height: 100vh;
   }
@@ -70,12 +70,17 @@ html {
       }
 
       .ant-input-affix-wrapper {
-        background-color: var(--SecondaryColor);
+        background-color: transparent;
 
         input {
           padding: 5px 10px;
           background-color: var(--whiteColor);
           border-radius: 20px;
+
+          &::placeholder {
+            color: black;
+            opacity: 0.6;
+          }
         }
       }
 

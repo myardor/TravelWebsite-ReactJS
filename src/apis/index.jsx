@@ -5,19 +5,26 @@ import axios from "axios"
 axios.defaults.baseURL = "http://localhost:3005"
 
 // verifyUsrInfo
-const verifyUsrInfo = async username => {
-  await axios({
+const verifyUsrInfoAPI = async username => {
+  const res = await axios({
     url: `/usrInfo`,
     params: {
-      phone: username,
+      phone: username.username,
     },
-  }).then(res => {
-    // console.log(res.data)
-    return res.data[0]
   })
+  if (res.data[0] && res.data[0].password === username.password) {
+    localStorage.setItem("nickname", res.data[0].nickname)
+    return {
+      message: "Login successfully! Will jump to homepage soon...",
+      type: "success",
+    }
+  } else {
+    return { message: "Incorrect username or password!", type: "error" }
+  }
 }
+
 // setUsrInfo
-const setUsrInfo = data => {
+const setUsrInfoAPI = data => {
   return axios({
     url: "/usrInfo",
     method: "post",
@@ -62,6 +69,6 @@ export {
   getMainDataAPI,
   getHotelDataAPI,
   getRegionDataAPI,
-  setUsrInfo,
-  verifyUsrInfo,
+  setUsrInfoAPI,
+  verifyUsrInfoAPI,
 }

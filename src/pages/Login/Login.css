@@ -41,7 +41,7 @@ html {
 }
 
 #root .login {
-  background-image: url("../../assets/img(3).jpg");
+  background-image: url("../../assets/img(16).jpg");
   background-size: cover;
   height: 100vh;
 }
@@ -69,12 +69,20 @@ html {
   color: var(--whiteColor);
 }
 #root .loginForm .formItems .ant-input-affix-wrapper {
-  background-color: var(--SecondaryColor);
+  background-color: transparent;
 }
 #root .loginForm .formItems .ant-input-affix-wrapper input {
   padding: 5px 10px;
   background-color: var(--whiteColor);
   border-radius: 20px;
+}
+#root .loginForm .formItems .ant-input-affix-wrapper input::-moz-placeholder {
+  color: black;
+  opacity: 0.6;
+}
+#root .loginForm .formItems .ant-input-affix-wrapper input::placeholder {
+  color: black;
+  opacity: 0.6;
 }
 #root .loginForm .formItems .ant-btn {
   background-color: var(--SecondaryColor);
