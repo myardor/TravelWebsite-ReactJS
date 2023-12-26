@@ -9,10 +9,12 @@ import { MdHotel } from "react-icons/md"
 import { MdFlight } from "react-icons/md"
 import { MdHome } from "react-icons/md"
 import { LuPalmtree } from "react-icons/lu"
+import { MdLogout } from "react-icons/md"
 
 const Navbar = () => {
   // 设置导航栏的开启与关闭
   const [active, setActive] = useState("navBar")
+  const [logtShow, setLogtShow] = useState(false)
   const toggleNavbar = () => {
     if (active === "navBar") {
       setActive("navBar showNavbar")
@@ -20,8 +22,11 @@ const Navbar = () => {
       setActive("navBar")
     }
   }
-
   const navigate = useNavigate()
+
+  const onLogout = () => {
+    localStorage.clear("nickname")
+  }
 
   return (
     <section className='navBarSection'>
@@ -65,14 +70,36 @@ const Navbar = () => {
             </li>
 
             {localStorage.getItem("nickname") ? (
-              <button className='btn'>
-                <a href='#' className='nickname'>
-                  <i className='usrIcon'>
-                    <FaUser />
-                  </i>
-                  {localStorage.getItem("nickname")}
-                </a>
-              </button>
+              <div
+                className='usrCenter'
+                onMouseOver={() => {
+                  setLogtShow(true)
+                }}
+                onMouseOut={() => {
+                  setLogtShow(false)
+                }}
+              >
+                {!logtShow && (
+                  <button className='btn'>
+                    <a href='#' className='nickname'>
+                      <i className='usrIcon'>
+                        <FaUser />
+                      </i>
+                      {localStorage.getItem("nickname")}
+                    </a>
+                  </button>
+                )}
+                {logtShow && (
+                  <button className='btn logoutBtn' onClick={onLogout}>
+                    <a href='#' className='nickname'>
+                      <i className='logoutIcon'>
+                        <MdLogout />
+                      </i>
+                      Log Out
+                    </a>
+                  </button>
+                )}
+              </div>
             ) : (
               <button className='btn' onClick={() => navigate("/login")}>
                 <a href='#'>SIGN IN</a>

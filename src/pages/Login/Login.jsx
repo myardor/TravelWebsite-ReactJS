@@ -20,7 +20,7 @@ const Login = () => {
       if (res.type === "success") {
         navigate("/")
       }
-    }, 1200)
+    }, 600)
   }
   return (
     <>
