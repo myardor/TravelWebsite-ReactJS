@@ -136,7 +136,7 @@ const Register = () => {
               {/* confirm password */}
               <Form.Item
                 name='confirm'
-                label='Confirm Password'
+                label='Confirm Pwd'
                 dependencies={["password"]}
                 hasFeedback
                 rules={[

@@ -49,6 +49,7 @@ html {
     transform: translateX(-50%);
 
     width: 400px;
+
     .loginTitle {
       display: flex;
       justify-content: center;
@@ -87,6 +88,14 @@ html {
       .ant-btn {
         background-color: var(--SecondaryColor);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #root {
+    .loginForm {
+      width: 320px;
     }
   }
 }

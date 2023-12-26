@@ -86,4 +86,10 @@ html {
 }
 #root .loginForm .formItems .ant-btn {
   background-color: var(--SecondaryColor);
+}
+
+@media screen and (max-width: 500px) {
+  #root .loginForm {
+    width: 320px;
+  }
 }/*# sourceMappingURL=Login.css.map */

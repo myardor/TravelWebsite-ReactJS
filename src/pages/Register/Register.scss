@@ -18,20 +18,22 @@
 
 body,
 html {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif; /* 可选：设置默认字体 */
 }
 #root {
+  height: 100%;
   //   position: relative;
   .register {
     background-image: url("../../assets/img\(5\).jpg");
     background-size: cover;
-    height: 100vh;
+    height: 100%;
   }
   .registerForm {
     position: absolute;
-    top: 10rem;
+    top: 8rem;
     left: 50%;
     transform: translateX(-50%);
 
@@ -48,7 +50,7 @@ html {
     }
 
     .formItems {
-      padding: 1rem;
+      padding: 1rem 1rem 0;
       border: 3px solid var(--whiteColor);
       border-radius: 20px;
 
@@ -59,6 +61,32 @@ html {
       .ant-btn {
         background-color: var(--SecondaryColor);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #root {
+    .registerForm {
+      top: 2rem;
+      width: 320px;
+    }
+
+    .ant-form {
+      .formItems {
+        .ant-form-item {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #root {
+    .registerForm {
+      top: 2rem;
+      width: 320px;
     }
   }
 }

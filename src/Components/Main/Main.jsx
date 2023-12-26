@@ -47,7 +47,7 @@ const Main = () => {
           Most visited destinations
         </h3>
         <button className='btn' onClick={onClickChange}>
-          CHANGE
+          NEXT PAGE
         </button>
       </div>
       <div className='secContent grid'>

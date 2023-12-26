@@ -512,6 +512,15 @@
       "confirm": "123",
       "agreement": true,
       "id": 3
+    },
+    {
+      "nickname": "丁真",
+      "prefix": "86",
+      "phone": "131",
+      "password": "131",
+      "confirm": "131",
+      "agreement": true,
+      "id": 4
     }
   ]
 }

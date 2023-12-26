@@ -24,9 +24,7 @@ const Navbar = () => {
   }
   const navigate = useNavigate()
 
-  const onLogout = () => {
-    localStorage.clear("nickname")
-  }
+  const onLogout = () => {}
 
   return (
     <section className='navBarSection'>
@@ -90,7 +88,10 @@ const Navbar = () => {
                   </button>
                 )}
                 {logtShow && (
-                  <button className='btn logoutBtn' onClick={onLogout}>
+                  <button
+                    className='btn logoutBtn'
+                    onClick={() => localStorage.clear("nickname")}
+                  >
                     <a href='#' className='nickname'>
                       <i className='logoutIcon'>
                         <MdLogout />
