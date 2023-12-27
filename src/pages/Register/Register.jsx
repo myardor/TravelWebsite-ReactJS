@@ -45,7 +45,6 @@ const Register = () => {
 
   const onFinish = async values => {
     const res = await setUsrInfoAPI(values)
-    // console.log(res)
     setVerifyInput(res)
     setAlertShow(true)
     setTimeout(() => {
@@ -112,6 +111,10 @@ const Register = () => {
                   {
                     required: true,
                     message: "Please input your phone number!",
+                  },
+                  {
+                    pattern: /^1[3-9]\d{9}$/,
+                    message: "The phone number format is incorrect!",
                   },
                 ]}
               >

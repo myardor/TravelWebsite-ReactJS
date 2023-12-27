@@ -512,6 +512,15 @@
       "confirm": "13140",
       "agreement": true,
       "id": 3
+    },
+    {
+      "nickname": "numOne",
+      "prefix": "86",
+      "phone": "13140000000",
+      "password": "1314",
+      "confirm": "1314",
+      "agreement": true,
+      "id": 4
     }
   ]
 }
