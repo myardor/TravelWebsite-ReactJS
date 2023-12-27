@@ -496,31 +496,22 @@
       "id": 1
     },
     {
-      "nickname": "Ardor",
+      "nickname": "myardor",
       "prefix": "86",
-      "phone": "1314",
-      "password": "1314",
-      "confirm": "1314",
+      "phone": "13140",
+      "password": "13140",
+      "confirm": "13140",
       "agreement": true,
       "id": 2
     },
     {
-      "nickname": "myardor",
+      "nickname": "myardoo",
       "prefix": "86",
-      "phone": "123",
-      "password": "123",
-      "confirm": "123",
+      "phone": "131422",
+      "password": "13140",
+      "confirm": "13140",
       "agreement": true,
       "id": 3
-    },
-    {
-      "nickname": "丁真",
-      "prefix": "86",
-      "phone": "131",
-      "password": "131",
-      "confirm": "131",
-      "agreement": true,
-      "id": 4
     }
   ]
 }

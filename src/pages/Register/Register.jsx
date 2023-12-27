@@ -39,16 +39,21 @@ const tailFormItemLayout = {
 }
 const Register = () => {
   const navigate = useNavigate()
+  const [verifyInput, setVerifyInput] = useState({})
   const [alertShow, setAlertShow] = useState(false)
   const [form] = Form.useForm()
-  const onFinish = values => {
-    console.log(values)
-    setTimeout(() => {
-      localStorage.setItem("nickname", values.nickname)
-      navigate("/")
-    }, 1200)
+
+  const onFinish = async values => {
+    const res = await setUsrInfoAPI(values)
+    // console.log(res)
+    setVerifyInput(res)
     setAlertShow(true)
-    setUsrInfoAPI(values)
+    setTimeout(() => {
+      if (res.type === "success") {
+        setAlertShow(false)
+        navigate("/")
+      }
+    }, 800)
   }
   const prefixSelector = (
     <Form.Item name='prefix' noStyle>
@@ -186,8 +191,8 @@ const Register = () => {
             </div>
             {alertShow && (
               <Alert
-                message='registration success! Will jump to homepage soon...'
-                type='success'
+                message={verifyInput.message}
+                type={verifyInput.type}
                 style={{
                   marginTop: "20px",
                   textAlign: "center",

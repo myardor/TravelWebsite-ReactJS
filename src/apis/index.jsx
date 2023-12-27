@@ -24,13 +24,38 @@ const verifyUsrInfoAPI = async username => {
 }
 
 // setUsrInfo
-const setUsrInfoAPI = data => {
-  return axios({
-    url: "/usrInfo",
-    method: "post",
-    data,
+const setUsrInfoAPI = async values => {
+  const res = await axios({
+    url: `/usrInfo`,
+    method: "get",
+    params: {
+      phone: values.phone,
+    },
   })
+  console.log(res)
+  if (!res.data[0]) {
+    localStorage.setItem("nickname", values.nickname)
+    await axios({
+      url: "/usrInfo",
+      method: "post",
+      data: values,
+    })
+    return {
+      message: "Register successfully! Will jump to homepage soon...",
+      type: "success",
+    }
+  } else {
+    return { message: "The phone number has been registered!", type: "error" }
+  }
 }
+
+// const setUsrInfoAPI = data => {
+//   return axios({
+//     url: "/usrInfo",
+//     method: "post",
+//     data,
+//   })
+// }
 
 // Destinations
 const getAttrDataAPI = () => {

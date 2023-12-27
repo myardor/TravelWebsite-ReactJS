@@ -11,7 +11,6 @@ const Login = () => {
   const navigate = useNavigate()
   const onFinish = async values => {
     const res = await verifyUsrInfoAPI(values)
-    console.log(values)
     setVerifyInput(res)
     setAlertShow(true)
 
