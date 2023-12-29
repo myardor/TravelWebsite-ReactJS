@@ -1,8 +1,8 @@
 import axios from "axios"
 
 // 设置前置url
-// axios.defaults.baseURL = "http://47.95.39.183:3005"
-axios.defaults.baseURL = "http://localhost:3005"
+axios.defaults.baseURL = "http://47.95.39.183:3005"
+// axios.defaults.baseURL = "http://localhost:3005"
 
 // verifyUsrInfo
 const verifyUsrInfoAPI = async username => {
