@@ -521,6 +521,15 @@
       "confirm": "1314",
       "agreement": true,
       "id": 4
+    },
+    {
+      "nickname": "welcome",
+      "prefix": "86",
+      "phone": "13011111111",
+      "password": "123",
+      "confirm": "123",
+      "agreement": true,
+      "id": 5
     }
   ]
 }
