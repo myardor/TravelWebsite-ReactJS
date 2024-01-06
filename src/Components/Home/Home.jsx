@@ -20,6 +20,22 @@ const Home = ({
     Aos.init({ duration: 1000 })
   }, [])
 
+  const [location, setLocation] = useState({})
+
+  const getLocation = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(position => {
+        console.log(position.coords.latitude, position.coords.longitude)
+        setLocation({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+        })
+      })
+    } else {
+      alert("Geolocation is not supported by this browser.")
+    }
+  }
+
   return (
     <section className='home'>
       {/* <div className='overlay'></div> */}
@@ -38,7 +54,7 @@ const Home = ({
             <label htmlFor='city'>Search your destination:</label>
             <div className='input flex'>
               <input type='text' placeholder='Enter name here...' />
-              <CiLocationOn className='icon' />
+              <CiLocationOn className='icon' onClick={getLocation} />
             </div>
           </div>
           {/* 日期 */}

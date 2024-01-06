@@ -15,10 +15,6 @@ const Tabs = () => {
 
   useEffect(() => {
     const getRegionData = async () => {
-      const url1 = "http://47.95.39.183:3005/regionData"
-      const url2 = "http://47.95.39.183:3005/cityData"
-      const url3 = "http://47.95.39.183:3005/interestPlaceData"
-
       //   一次请求多份数据
       const [res1, res2, res3] = await getRegionDataAPI()
 
